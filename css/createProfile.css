@@ -1,0 +1,287 @@
+html {
+    box-sizing: border-box;
+    overflow-x:hidden ;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 1290px;
+    background: linear-gradient(180deg, #BEDEDF 0%, #C2DFE0 70.76%, #FFFFFF 132.84%);
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    color: #F9F8F8;
+}
+
+/*header container*/
+.container .header {
+    background-color: #0E8388;
+    width: 1350px;
+    height: 110px;
+}
+
+/*logo styling*/
+.header a img  {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 15px;
+    left: 120px;
+}
+
+/*inner container*/
+.container .innerCont {
+    position: absolute;
+    width: 820px;
+    height: 850px;
+    left: 290px;
+    top: 220px;
+    background: #5EACB0;
+    border-radius: 10px;
+}
+/*subInn container*/
+.container .innerCont .subInn{
+    position: absolute;
+    width: 590px;
+    height: 541px;
+    left: 120px;
+    top: 69px;
+}
+/*subInn h4 element*/
+.container .innerCont .subInn h4{
+    position: absolute;
+    width: 300px;
+    height: 32px;
+    left: 140px;
+    top: 0px;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    color: inherit;
+}
+/*subInn topLayer container*/
+.container .innerCont .subInn .topLayer{
+    position: absolute;
+    width: 590px;
+    height: 469px;
+    left: 0px;
+    top: 72px;
+}
+/* button styling */
+.container .innerCont .subInn .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 209px;
+    gap: 10px;
+    position:absolute;
+    width: 590px;
+    height: 56px;
+    left: 0px;
+    top: 550px;
+    background-color: #09575B;
+    border: 0;
+    border-radius: 5px;
+    font-size: 22px;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: bolder;
+    line-height: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: inherit;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+/*h5 styling*/
+.container .innerCont .subInn .topLayer h5{
+    position: absolute;
+    width: 500px;
+    height: 64px;
+    left: 40px;
+    top: 0px;
+    text-align: center;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+}
+/*Styling of div forms*/
+.container .innerCont .subInn .topLayer .forms{
+    position: absolute;
+    width: inherit;
+    height: 289;
+    left: 0px;
+    top: 84px;
+}
+/*Styling of minForm*/
+.container.innerCont .subInn .topLayer .forms .minForm{
+    position: inherit;
+    width: inherit;
+    height: 174px;
+    left: 0px;
+    top: 0px;
+}
+.forms .minForm .row1, .row2, .row3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    position: absolute;
+    width: 590px;
+    height: 79px;
+    left: 0px;
+}
+.row2{
+    top: 120px;
+    
+}
+.row3{
+    top: 230px;
+    align-items: flex-start;
+    height: 99px;
+}
+/*styling of containers in minForm container*/
+.forms .minForm .row1 .firstname, .secondname, .phone, .gender{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 287px;
+    height: 79px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.secondname{
+    order: 1;
+}
+/*styling of label in minform container*/
+.forms .minForm label{
+    width: 150px;
+    height: 19px;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: inherit;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: -5px 0px;
+}
+.forms .minForm p{
+    font-size: 13px;
+    font-family: inherit;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 5px;
+    line-height: 16px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    color: inherit;
+}
+/*styling of input and select in minform container*/
+.forms .minForm input, select{
+    width: 287px;
+    height: 56px;
+    background: #F9F8F8;
+    border: 1px solid #C0C0C0;
+    border-radius: 5px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    padding: 0 10px;
+    color: lightslategrey;
+    font-size: 16px;
+    font-weight: 500;
+}
+input::placeholder{
+    width: 121px;
+    height: 19px;
+    padding: 5px;
+    font-family: inherit;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C0C0C0;
+}
+input.DOB{
+    color: #C0C0C0;
+    font-family: inherit;
+    font-weight: 700;
+    font-style: normal;
+}
+.DOB:focus{
+    outline: none;
+    color: #C0C0C0;
+}
+select.box{
+    color: gray;
+    font-family: inherit;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+select:focus{
+    outline: none;
+}
+
+/* footer section styling */
+.container .footer {
+    position: relative;
+    width: 1350px;
+    height: 80px;
+    left: 0px;
+    top: 1100px;
+    background-color: #0E8388;
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    color: #F9F8F8;
+}
+
+.container .footer .list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 550px;
+    position: absolute;
+    width: 1200px;
+    left: 120px;
+    top: 39px;
+}
+
+.container .footer .list ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+/* footer anchor element styling */
+.container .footer .list a {
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}

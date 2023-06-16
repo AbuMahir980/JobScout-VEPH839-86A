@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/notificationDrpdwn.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-box">
+            <div class="container grid nav-box-display">
+                <nav class="flex">
+                    <div class="menuToggle"></div>
+                    <a href="index.html" class="logo">
+                        <img src="/images/Screenshot 2023-04-25 at 9.23.44 AM 1.png" alt="logo">
+                    </a>
+                    <ul class="nav-con">
+                        <li class="nav-item"><a href="../index.html"><span style="color: #fff;"><i class="fa-solid fa-house"></i></span> Home</a></li>
+                        <li class="nav-item"><a href="/pages/search.html"><span style="color: #fff;"><i class="fa-solid fa-magnifying-glass icon search" ></i></span> Job search</a></li>
+                        <li class="nav-item"><a href=""><span style="color: #fff;"><i class="fa-regular fa-bookmark"></i></span> Saved Search</a></li>
+                        <li class="nav-item"><a href="/pages/jobhistory.html"><span style="color: #fff;"><i class="fa-regular fa-clock"></i></i></span> History</a></li>
+                    </ul>
+                    <ul class="auth-container">
+                        <input type="checkbox" id="collapsible-head">
+                        <label for="collapsible-head"><li class="auth-item login"><i class="fa-regular fa-bell"></i></li></label>
+                        <section class="notification-section">
+                            <div class="notification-container">
+                                <div class="notification-top not-pad grid">
+                                    <div class="notification-close flex">
+                                        <div class="">
+                                            <h2>Notification</h2>
+                                        </div>
+                                        <label class="close" for="collapsible-head">
+                                            <i class="fa-regular fa-circle-xmark"></i>
+                                        </label>
+                                    </div>
+
+                                    <div class="notification-groups-heads flex">
+                                        <div class="notification-group-head active-not-head flex">
+                                            <h4>News</h4>
+                                            <div class="notification-count">
+                                                2
+                                            </div>
+                                        </div>
+                                        <div class="notification-group-head flex">
+                                            <h4>News</h4>
+                                            <div class="notification-count">
+                                                2
+                                            </div>
+                                        </div>
+                                        <div class="notification-group-head flex">
+                                            <h4>News</h4>
+                                            <div class="notification-count">
+                                                2
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="notification-bottom">
+                                    <div class="notification-groups-items">
+                                        <div class="notification-item not-pad flex">
+                                            <div class="notification-logo">
+                                                <img src="images/Group 34.png" alt="">
+                                            </div>
+                                            <div class="flex">
+                                                <div class="notification-details">
+                                                    <h3>Capstone plc</h3>
+                                                    <p>You received a job offer from capstone plc</p>
+                                                </div>
+                                                <div class="notification-time">
+                                                    <p>3 min ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="notification-item not-pad flex">
+                                            <div class="notification-logo">
+                                                <img src="images/Group 34.png" alt="">
+                                            </div>
+                                            <div class="flex">
+                                                <div class="notification-details">
+                                                    <h3>Capstone plc</h3>
+                                                    <p>You received a job offer from capstone plc</p>
+                                                </div>
+                                                <div class="notification-time">
+                                                    <p>3 min ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="notification-item not-pad flex">
+                                            <div class="notification-logo">
+                                                <img src="images/Group 34.png" alt="">
+                                            </div>
+                                            <div class="flex">
+                                                <div class="notification-details">
+                                                    <h3>Capstone plc</h3>
+                                                    <p>You received a job offer from capstone plc</p>
+                                                </div>
+                                                <div class="notification-time">
+                                                    <p>3 min ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="notification-item not-pad flex">
+                                            <div class="notification-logo">
+                                                <img src="images/Group 34.png" alt="">
+                                            </div>
+                                            <div class="flex">
+                                                <div class="notification-details">
+                                                    <h3>Capstone plc</h3>
+                                                    <p>You received a job offer from capstone plc</p>
+                                                </div>
+                                                <div class="notification-time">
+                                                    <p>3 min ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <li class="auth-item signup"><a href="/pages/profile-edit.html"><i class="fa-regular fa-user"></i></a></li>
+                    </ul>
+                </nav>
+
+                <h3><span>Welcome</span>, User</h3>
+                <h4>Find your dream job Here</h4>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="cover">
+        <main class="grid">
+
+            <!-- SEARCH SECTION -->
+            <section class="search-section">
+                <div class="container">
+                    <div class="search-con grid">
+                        <form action="">
+                            <div class="search-box">
+                                <i class="fa-solid fa-magnifying-glass icon search" ></i>
+                                <input type="text" placeholder="skills, kexwords, companies...">
+                            </div>
+
+                            <div onclick="window.open('/pages/search.html', '_self') ;"class="btn">Search</div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- JOB SUGESSTIONS -->
+            <section>
+                <div class="container">
+                    <div class="multiple-jobs grid">
+
+                        <!-- JOBS OFFERS -->
+                        <section class=" grid">
+                            <!-- JOBS OFFER HEADING -->
+                            <section class="jobs-head flex">
+                                <h3>Job offers for you</h3>
+                                <a href="">
+                                    <h3>See all</h3>
+                                </a>
+                            </section>
+
+                            <!-- JOBS ITEMS GROUP -->
+                            <div class="wrapper">
+                                <i id="left" class="fa-solid fa-angle-left"></i>
+                                <ul class="carousel">
+                                <li class="card">
+                                    <div class="img"><img src="/images/building.png" alt="img" draggable="false"></div>
+                                    <h2>40k</h2>
+                                    <span>Remote Job</span>
+                                </li>
+                                <li class="card">
+                                    <div class="img"><img src="/images/building1.png" alt="img" draggable="false"></div>
+                                    <h2>25k</h2>
+                                    <span>Part-time Job</span>
+                                </li>
+                                <li class="card">
+                                    <div class="img"><img src="/images/building2.png" alt="img" draggable="false"></div>
+                                    <h2>38k</h2>
+                                    <span>Full-Time Job</span>
+                                </li>
+                                <li class="card">
+                                    <div class="img"><img src="/images/building3.png" alt="img" draggable="false"></div>
+                                    <h2>28k</h2>
+                                    <span>Part-time Job</span>
+                                </li>
+                                <li class="card">
+                                    <div class="img"><img src="/images/building4.png" alt="img" draggable="false"></div>
+                                    <h2>26k</h2>
+                                    <span>Remote Job</span>
+                                </li>
+                                <li class="card">
+                                    <div class="img"><img src="/images/building5.png" alt="img" draggable="false"></div>
+                                    <h2>22k</h2>
+                                    <span>Remote Job</span>
+                                </li>
+                                </ul>
+                                <i id="right" class="fa-solid fa-angle-right"></i>
+                            </div>
+
+                            <!-- <section class="job-items flex">
+                                <div class="job-item grid">
+                                    <div class="job-logo grid">
+                                        <i class="fa-regular fa-user"></i>
+                                    </div>
+                                    <div class="job-price">
+                                        <h3>400K</h3>
+                                    </div>
+                                    <div class="job-name">
+                                        <h3>Remote Job</h3>
+                                    </div>
+                                </div>
+                                <div class="job-item grid">
+                                    <div class="job-logo grid">
+                                        <i class="fa-regular fa-user"></i>
+                                    </div>
+                                    <div class="job-price">
+                                        <h3>400K</h3>
+                                    </div>
+                                    <div class="job-name">
+                                        <h3>Remote Job</h3>
+                                    </div>
+                                </div>
+                                <div class="job-item grid">
+                                    <div class="job-logo grid">
+                                        <i class="fa-regular fa-user"></i>
+                                    </div>
+                                    <div class="job-price">
+                                        <h3>400K</h3>
+                                    </div>
+                                    <div class="job-name">
+                                        <h3>Remote Job</h3>
+                                    </div>
+                                </div>
+                                <div class="job-item grid">
+                                    <div class="job-logo grid">
+                                        <i class="fa-regular fa-user"></i>
+                                    </div>
+                                    <div class="job-price">
+                                        <h3>400K</h3>
+                                    </div>
+                                    <div class="job-name">
+                                        <h3>Remote Job</h3>
+                                    </div>
+                                </div>
+                                <div class="job-item grid">
+                                    <div class="job-logo grid">
+                                        <i class="fa-regular fa-user"></i>
+                                    </div>
+                                    <div class="job-price">
+                                        <h3>400K</h3>
+                                    </div>
+                                    <div class="job-name">
+                                        <h3>Remote Job</h3>
+                                    </div>
+                                </div>
+                                <div class="job-item grid">
+                                    <div class="job-logo grid">
+                                        <i class="fa-regular fa-user"></i>
+                                    </div>
+                                    <div class="job-price">
+                                        <h3>400K</h3>
+                                    </div>
+                                    <div class="job-name">
+                                        <h3>Remote Job</h3>
+                                    </div>
+                                </div>
+                                <div class="job-item grid">
+                                    <div class="job-logo grid">
+                                        <i class="fa-regular fa-user"></i>
+                                    </div>
+                                    <div class="job-price">
+                                        <h3>400K</h3>
+                                    </div>
+                                    <div class="job-name">
+                                        <h3>Remote Job</h3>
+                                    </div>
+                                </div>
+
+                            </section> -->
+                        </section>
+
+                        <!-- OPPURTUNITY SECTION -->
+                        <section class="top-oppurtunity grid">
+                            <div class="oppurtunity-header">
+                                <h3>Top Oppurtunity for you</h3>
+                            </div>
+
+                            <!-- OPPURTUNITY ITEM GROUP  -->
+
+                            <div class="oppurtunity-group flex">
+
+
+                                <!-- OPPURTUNITY ITEMS  -->
+
+                                <div class="oppurtunity-item flex">
+                                    <div class="top flex">
+                                        <div class="job-info grid">
+                                            <div class="logo-display flex">
+                                                <div class="job-logo">
+                                                    <img src="images//Group 34.png" alt="">
+                                                </div>
+                                                <div class="logo-name">
+                                                    <h3>Amazon</h3>
+                                                </div>
+                                            </div>
+                                            <div class="job-details">
+                                                <div class="job-position"><h6>Web developer (2yr Exp)</h6> </div>
+                                                <div class="job-location"><h6>Greater Accra Region, Ghana</h6> </div>
+                                            </div>
+                                        </div>
+                                        <div class="bookmark">
+                                            <span><i class="fa-regular fa-bookmark"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="bottom flex">
+                                        <div class="salary">
+                                            <p>$2,000/-</p>
+                                        </div>
+
+                                        <div class="apply">
+                                            <div class="btn"><a href="#"> Apply</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="oppurtunity-item flex">
+                                    <div class="top flex">
+                                        <div class="job-info grid">
+                                            <div class="logo-display flex">
+                                                <div class="job-logo">
+                                                    <img src="images//Group 34.png" alt="">
+                                                </div>
+                                                <div class="logo-name">
+                                                    <h3>Amazon</h3>
+                                                </div>
+                                            </div>
+                                            <div class="job-details">
+                                                <div class="job-position"><h6>Web developer (2yr Exp)</h6> </div>
+                                                <div class="job-location"><h6>Greater Accra Region, Ghana</h6> </div>
+                                            </div>
+                                        </div>
+                                        <div class="bookmark">
+                                            <span><i class="fa-regular fa-bookmark"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="bottom flex">
+                                        <div class="salary">
+                                            <p>$2,000/-</p>
+                                        </div>
+
+                                        <div class="apply">
+                                            <div class="btn"><a href="#"> Apply</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="oppurtunity-item flex">
+                                    <div class="top flex">
+                                        <div class="job-info grid">
+                                            <div class="logo-display flex">
+                                                <div class="job-logo">
+                                                    <img src="images//Group 34.png" alt="">
+                                                </div>
+                                                <div class="logo-name">
+                                                    <h3>Amazon</h3>
+                                                </div>
+                                            </div>
+                                            <div class="job-details">
+                                                <div class="job-position"><h6>Web developer (2yr Exp)</h6> </div>
+                                                <div class="job-location"><h6>Greater Accra Region, Ghana</h6> </div>
+                                            </div>
+                                        </div>
+                                        <div class="bookmark">
+                                            <span><i class="fa-regular fa-bookmark"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="bottom flex">
+                                        <div class="salary">
+                                            <p>$2,000/-</p>
+                                        </div>
+
+                                        <div class="apply">
+                                            <div class="btn"><a href="#"> Apply</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="oppurtunity-item flex">
+                                    <div class="top flex">
+                                        <div class="job-info grid">
+                                            <div class="logo-display flex">
+                                                <div class="job-logo">
+                                                    <img src="images//Group 34.png" alt="">
+                                                </div>
+                                                <div class="logo-name">
+                                                    <h3>Amazon</h3>
+                                                </div>
+                                            </div>
+                                            <div class="job-details">
+                                                <div class="job-position"><h6>Web developer (2yr Exp)</h6> </div>
+                                                <div class="job-location"><h6>Greater Accra Region, Ghana</h6> </div>
+                                            </div>
+                                        </div>
+                                        <div class="bookmark">
+                                            <span><i class="fa-regular fa-bookmark"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="bottom flex">
+                                        <div class="salary">
+                                            <p>$2,000/-</p>
+                                        </div>
+
+                                        <div class="apply">
+                                            <div class="btn"><a href="#"> Apply</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="oppurtunity-item flex">
+                                    <div class="top flex">
+                                        <div class="job-info grid">
+                                            <div class="logo-display flex">
+                                                <div class="job-logo">
+                                                    <img src="images//Group 34.png" alt="">
+                                                </div>
+                                                <div class="logo-name">
+                                                    <h3>Amazon</h3>
+                                                </div>
+                                            </div>
+                                            <div class="job-details">
+                                                <div class="job-position"><h6>Web developer (2yr Exp)</h6> </div>
+                                                <div class="job-location"><h6>Greater Accra Region, Ghana</h6> </div>
+                                            </div>
+                                        </div>
+                                        <div class="bookmark">
+                                            <span><i class="fa-regular fa-bookmark"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="bottom flex">
+                                        <div class="salary">
+                                            <p>$2,000/-</p>
+                                        </div>
+
+                                        <div class="apply">
+                                            <div class="btn"><a href="#"> Apply</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="oppurtunity-item flex">
+                                    <div class="top flex">
+                                        <div class="job-info grid">
+                                            <div class="logo-display flex">
+                                                <div class="job-logo">
+                                                    <img src="images//Group 34.png" alt="">
+                                                </div>
+                                                <div class="logo-name">
+                                                    <h3>Amazon</h3>
+                                                </div>
+                                            </div>
+                                            <div class="job-details">
+                                                <div class="job-position"><h6>Web developer (2yr Exp)</h6> </div>
+                                                <div class="job-location"><h6>Greater Accra Region, Ghana</h6> </div>
+                                            </div>
+                                        </div>
+                                        <div class="bookmark">
+                                            <span><i class="fa-regular fa-bookmark"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="bottom flex">
+                                        <div class="salary">
+                                            <p>$2,000/-</p>
+                                        </div>
+
+                                        <div class="apply">
+                                            <div class="btn"><a href="#"> Apply</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="oppurtunity-item flex">
+                                    <div class="top flex">
+                                        <div class="job-info grid">
+                                            <div class="logo-display flex">
+                                                <div class="job-logo">
+                                                    <img src="images//Group 34.png" alt="">
+                                                </div>
+                                                <div class="logo-name">
+                                                    <h3>Amazon</h3>
+                                                </div>
+                                            </div>
+                                            <div class="job-details">
+                                                <div class="job-position"><h6>Web developer (2yr Exp)</h6> </div>
+                                                <div class="job-location"><h6>Greater Accra Region, Ghana</h6> </div>
+                                            </div>
+                                        </div>
+                                        <div class="bookmark">
+                                            <span><i class="fa-regular fa-bookmark"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="bottom flex">
+                                        <div class="salary">
+                                            <p>$2,000/-</p>
+                                        </div>
+
+                                        <div class="apply">
+                                            <div class="btn"><a href="#"> Apply</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="oppurtunity-item flex">
+                                    <div class="top flex">
+                                        <div class="job-info grid">
+                                            <div class="logo-display flex">
+                                                <div class="job-logo">
+                                                    <img src="images//Group 34.png" alt="">
+                                                </div>
+                                                <div class="logo-name">
+                                                    <h3>Amazon</h3>
+                                                </div>
+                                            </div>
+                                            <div class="job-details">
+                                                <div class="job-position"><h6>Web developer (2yr Exp)</h6> </div>
+                                                <div class="job-location"><h6>Greater Accra Region, Ghana</h6> </div>
+                                            </div>
+                                        </div>
+                                        <div class="bookmark">
+                                            <span><i class="fa-regular fa-bookmark"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="bottom flex">
+                                        <div class="salary">
+                                            <p>$2,000/-</p>
+                                        </div>
+
+                                        <div class="apply">
+                                            <div class="btn"><a href="#"> Apply</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+
+                        <!-- COMPANIES -->
+                        <section>
+                            <div class="companies-con grid">
+                                <div class="company-header">
+                                    <h2>Company for you</h2>
+                                </div>
+
+                                <div class="companies-group flex">
+                                    <div class="company-item">
+                                        <div class="comapany-logo">
+                                            <img src="/images/Vector.png" alt="spotify">
+                                        </div>
+                                    </div>
+                                    <div class="company-item">
+                                        <div class="comapany-logo">
+                                            <img src="/images/Vector.png" alt="spotify">
+                                        </div>
+                                    </div>
+                                    <div class="company-item">
+                                        <div class="comapany-logo">
+                                            <img src="/images/Vector.png" alt="spotify">
+                                        </div>
+                                    </div>
+                                    <div class="company-item">
+                                        <div class="comapany-logo">
+                                            <img src="/images/Vector.png" alt="spotify">
+                                        </div>
+                                    </div>
+                                    <div class="company-item">
+                                        <div class="comapany-logo">
+                                            <img src="/images/Vector.png" alt="spotify">
+                                        </div>
+                                    </div>
+                                    <div class="company-item">
+                                        <div class="comapany-logo">
+                                            <img src="/images/Vector.png" alt="spotify">
+                                        </div>
+                                    </div>
+                                    <div class="company-item">
+                                        <div class="comapany-logo">
+                                            <img src="/images/Vector.png" alt="spotify">
+                                        </div>
+                                    </div>
+                                    <div class="company-item">
+                                        <div class="comapany-logo">
+                                            <img src="/images/Vector.png" alt="spotify">
+                                        </div>
+                                    </div>
+                                    <div class="company-item">
+                                        <div class="comapany-logo">
+                                            <img src="/images/Vector.png" alt="spotify">
+                                        </div>
+                                    </div>
+                                    <div class="company-item">
+                                        <div class="comapany-logo">
+                                            <img src="/images/Vector.png" alt="spotify">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        <!-- FOOTER -->
+
+    <footer class="grid">
+        <div class="container footer-con">
+            <div class="footer-logo grid">
+                <img
+                src="/images/Screenshot 2023-04-25 at 9.23.44 AM 2.png"
+                alt="logo-img"
+                />
+            </div>
+            <div class="footer-links">
+                <ul class="footer-about f-li grid">
+                <li class="footer-head">About</li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./aboutUs-index.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                </ul>
+                <ul class="footer-company f-li grid">
+                <li class="footer-head">Company</li>
+                <li><a>Our Team</a></li>
+                <li><a>Category</a></li>
+                <li><a href="./t&c.html">Terms & Conditions</a></li>
+                <li><a>Partner with us</a></li>
+                
+                </ul>
+                <ul class="footer-followUs f-li grid">
+                <li class="footer-head">Follow Us</li>
+                <li><a href="https://www.facebook.com/"><img src="/images/facebook.png" alt="facebook">Facebook</a></li>
+                <li><a href="https://twitter.com/"><img src="/images/twitter.png" alt="twitter">Twitter</a></li>
+                <li><a href="https://www.instagram.com/"><img src="/images/instagram.png" alt="instagram">Instagram</a></li>
+                <!-- <li><a href="#"><img src="" alt=""></a></li> -->
+                </ul>
+            </div>
+            <div class="footer-joinUs grid">
+                <h3 class="footer-head">Join Us</h3>
+                <p>Subscribe to our news letter</p>
+                <form action="" class="grid">
+                <input type="email" name="" id="" placeholder="Email Address" />
+                <div class="btn grid">Subscribe</div>
+                </form>
+            </div>
+            </div>
+            <div class="copyright">
+            <p>&copy; VEPH839/86A Project All rights reserved.</p>
+            </div>
+        </footer>
+
+    </section>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/home.js">
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Profile | Job Scout - The Number One Job Search Platform</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/completeProfile2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">   
+</head>    
+
+<body>
+    <!--Container-->
+    <div class="container">
+        <!--Header section-->
+        <div class="header">
+            <a href="index.html">
+            <img src="../images/jobScoutLogo.png" alt="jobScoutLogo">
+        </a>
+        </div>
+        <!--Section housing the profile contents-->
+        <div class="innerCont">
+            <div class="back">
+                    <a href="/pages/completeProfile1.html">&lt; Back</a>
+            </div>
+            <div class="subInn">
+                <div class="icon">
+                    <h2>Tell us more.</h2>
+                </div>
+
+                <div class="forms">
+                    <h5>Desired Job(s)</h5>
+                    <div class="formLev">
+                        <div class="desiredJob">
+                            <label for="desiredJob">Which job are you looking for</label>
+                            <br>
+                            <input type="text" name="desiredJob" id="recentJob" placeholder="e.g UI/UX designer">
+                        </div>
+
+                        <div class="employmentType">
+                            <label for="employmentType">Employment Type</label>
+                            <br>
+                            <select class="box" name="employmentType" id="employmentType" required>
+                                <option value="" disabled selected hidden id="lone">Select</option>
+                                <option value="Part-Time">Part-Time</option>
+                                <option value="Full-Time">Full-Time</option>
+                                <option value="Temporary">Temporary</option>
+                                <option value="Contract">Contract</option>
+                                <option disabled="disabled">&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;</option>
+                                <option value="Interim">Interim</option>
+                                <option value="Seasonal">Seasonal</option>
+                                <option value="Freelance">Freelance</option>
+                            </select>
+                        </div>  
+
+                        <div class="jobLocation">
+                            <label for="jobLocation">Job Location(s)</label>
+                            <br>
+                            <!-- <input type="text" name="jobLocation" id="jobLocation" placeholder="Lagos"> -->
+                            <select id="job-locations" class="box">
+                                <option value="">Select a location</option>
+                                <option value="Abuja">Abuja, Nigeria</option>
+                                <option value="Lagos">Lagos, Nigeria</option>
+                                <option value="Canada">Canada</option>
+                                <option value="N">India</option>
+                                <option value="New York">France</option>
+                                <option value="New York">New York</option>
+                                <option value="San Francisco">San Francisco</option>
+                                <option value="London">London</option>
+                                <option value="Tokyo">Tokyo</option>
+                            </select>
+                        </div>
+
+                        <div class="expSalary">
+                            <label for="expSalary">Expected Salary</label>
+                            <br>
+                            <input type="number" name="expSalary" id="expSalary" placeholder="₦0.00 per year">
+                        </div>    
+                    </div>
+                </div>
+
+                <hr class="line">
+
+                <div class="secLayer">
+                    <div class="upload">
+                        <h4>Share more with us</h4>
+                        <div class="mini">
+                            <form action="">
+                                <div class="link">
+                                    <label for="links">Upload your personal URL to share with companies.. (portfolio, behance e.t.c)</label>
+                                    <input type="text" name="links" id="links">
+                                </div>
+
+                                <div class="notify">
+                                    <label for="notification">how would you like to receive email notifications on Job recommendation?</label>
+                                    <br>
+                                    <select class="box" name="notification" id="notification" required>
+                                        <option value="" disabled selected hidden id="lone">Select</option>
+                                        <option value="Daily">Daily</option>
+                                        <option value="Weekly">Weekly</option>
+                                        <option value="Monthly">Monthly</option>
+                                    </select>
+                                </div>
+
+                                <div class="file">
+                                    <label for="file">Upload resume</label><br>
+                                    <input type="file" name="file" id="file">
+                                </div>
+
+                                <div class="checkbox">
+                                    <input type="checkbox" id="open" name="open" value="Open">
+                                    <label for="open">I am open to remote Jobs</label><br>
+                                    <input type="checkbox" id="receive" name="receive" value="Received">
+                                    <label for="receive">would you like to receive notifications any time your resume is viewed?</label>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+
+                    <div class="btn">
+                        <button onclick="window.open('/pages/assessment.html', '_self') ;"type="submit" class="butn">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--Footer-->
+        <div class="footer">
+            <div class="list">
+                <div class="priv">
+                    <ul>
+                        <li><a href="./privacy-index.html">Privacy</a></li>
+                        <li><a href="./t&c.html">Terms & Conditions</a></li>
+                        <li><a href="./contact-index.html">Contact</a></li>
+                        <li><a href="./faq-index.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="copy">
+                    <p>Copyright &copy; VEPH839/86A Project</p>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

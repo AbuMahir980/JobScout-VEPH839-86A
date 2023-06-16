@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Complete Profile | Job Scout - The Number One Job Search Platform
+    </title>
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/completeProfile1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <script src="../js/completeProfile1.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <!--Container-->
+    <div class="container">
+      <!--Header section-->
+      <div class="header">
+        <a href="index.html">
+        <img src="../images/jobScoutLogo.png" alt="jobScoutLogo" />
+      </a>
+      </div>
+      <!--Section housing the profile contents-->
+      <div class="innerCont">
+        <div class="back">
+          <a href="/pages/createProfile.html">&lt; Back</a>
+        </div>
+        <div class="subInn">
+          <div class="icon">
+            <h2>We are so glad you are here.</h2>
+            <h4>What best describe you?</h4>
+            <div class="component">
+              <div class="image-container">
+                <img
+                  id="employed"
+                  src="../images/employedUnclick.png"
+                  alt="Employed"
+                  onclick="toggleBorder(this)"
+                />
+              </div>
+              <div class="image-container">
+                <img
+                  id="unemployed"
+                  src="../images/notEmployedUnclick.png"
+                  alt="Not Employed"
+                  onclick="toggleBorder(this)"
+                />
+              </div>
+            </div>
+          </div>
+
+          <hr class="line" />
+          <form action="">
+          <div class="forms">
+            <div class="recentJob">
+              <label for="recentJob">Most recent job</label>
+              <br />
+              <input
+                type="text"
+                id="search-bar"
+                placeholder="Web Developer"
+                autocomplete="off"
+              />
+              <ul id="autocomplete-results"></ul>
+            </div>
+
+            <div class="recentCompany">
+              <label for="recentCompany">Most recent company</label>
+              <br />
+              <input
+                type="text"
+                name="recentCompany"
+                id="recentCompany"
+                placeholder="Google"
+              />
+            </div>
+
+            <div class="jobLocation">
+              <label for="jobLocation">Job Location</label>
+              <br />
+              <!-- <input
+                type="text"
+                name="jobLocation"
+                id="location-input"
+                placeholder="Lagos"
+              /> -->
+                <select id="job-locations" class="box">
+                <option value="">Select a location</option>
+                <option value="Abuja">Abuja, Nigeria</option>
+                <option value="Lagos">Lagos, Nigeria</option>
+                <option value="Canada">Canada</option>
+                <option value="N">India</option>
+                <option value="New York">France</option>
+                <option value="New York">New York</option>
+                <option value="San Francisco">San Francisco</option>
+                <option value="London">London</option>
+                <option value="Tokyo">Tokyo</option>
+              </select>
+            </div>
+
+            <div class="employmentType">
+              <label for="employmentType">Employment Type</label>
+              <br />
+              <select
+                class="box"
+                name="employmentType"
+                id="employmentType"
+                required
+              >
+                <option value="" disabled selected hidden id="lone">
+                  Select
+                </option>
+                <option value="Part-Time">Part-Time</option>
+                <option value="Full-Time">Full-Time</option>
+                <option value="Temporary">Temporary</option>
+                <option value="Contract">Contract</option>
+                <option disabled="disabled">
+                  &HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;&HorizontalLine;
+                </option>
+                <option value="Interim">Interim</option>
+                <option value="Seasonal">Seasonal</option>
+                <option value="Freelance">Freelance</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="btn">
+            <a href="../pages/completeprofile2.html">I have no work history</a>
+            <button
+              onclick="window.open('/pages/completeprofile2.html', '_self') ;"
+              type="submit"
+              class="butn"
+            >
+              Continue
+            </button>
+          </div>
+          </form>
+        </div>
+      </div>
+      <!--Footer-->
+      <div class="footer">
+        <div class="list">
+          <div class="priv">
+            <ul>
+              <li><a href="./privacy-index.html">Privacy</a></li>
+              <li><a href="./t&c.html">Terms & Conditions</a></li>
+              <li><a href="./contact-index.html">Contact</a></li>
+              <li><a href="./faq-index.html">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="copy">
+            <p>Copyright &copy; VEPH839/86A Project</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

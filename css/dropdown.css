@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+li{
+    list-style: none;
+}
+
+
+
+
+/* PRICE RANGE */
+
+.price{
+    gap: 5px;
+}
+
+.price .price-range{
+    justify-content: space-between;
+}
+
+/* .price-range .min-price,
+.price-range .max-price{
+    width: 70px;
+    text-align: center;
+} */
+
+.price-range{
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: space-between;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+.price .slider{
+    height: 5px;
+    border-radius: 5px;
+    background-color: #6e6e6e44;
+    position: relative;
+}
+
+.price .slider .progress{
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #FF9E3A;
+}
+
+.range-input{
+    position: relative;
+    border: none;
+    transition: 0s;
+}
+
+.range-input input{
+    position: absolute;
+    top: -10px;
+    height: 5px;
+    width: 100%;
+    background: none ;
+    -webkit-appearance: none;
+    pointer-events: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    height: 20px;
+    width: 20px;
+    /* border: 1px solid  #FF9E3A; */
+    border-radius: 50%;
+    -webkit-appearance: none;
+    background-color:#FF9E3A;
+    pointer-events: auto;
+    /* transition: .3s; */
+    cursor: pointer;
+    
+}
+
+input[type="range"]::-webkit-slider-thumb:hover{
+    box-shadow: 2px 2px 3px #7e7e7e83;
+
+}
+
+input[type="range"]::-moz-range-thumb{
+    height: 20px;
+    width: 20px;
+    /* border: 1px solid  #FF9E3A; */
+    border-radius: 50%;
+    -moz-appearance: none;
+    background-color: #ff9c3a9c;
+    pointer-events: auto;
+    transition: .3s;
+}
+
+input[type="range"]::-moz-range-thumb:hover{
+    background-color:#FF9E3A;
+    box-shadow: 2px 2px 3px #7e7e7e83;
+
+}
+
+/* D-R-O-P__D-O-W-N-S */
+
+/* SALARY DROPDOWN */
+.salary-dropdown{
+    text-align: left;
+    height: 150px;
+    align-items: center;
+    display: grid;
+    gap: 10px;
+    align-self: left;
+    border-bottom:  #948f8f 2px solid;;
+}
+
+.salary.dropbtn img{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.salary.dropbtn{
+    align-items: center;
+    gap: 10px;
+}
+
+.salary-dropdown-content{
+    display: none;
+    opacity: 0;
+    transition: .5s;
+}
+
+.salary-dropdown-content.show{
+    display: grid;
+    gap: 20px;
+    opacity: 1;
+    width: 100px;
+    position: absolute;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    margin: 197px 0 0 0;
+    border-radius: 7px;
+    padding: 15px;
+    width: 178px;
+}
+
+.dropbtn{
+    width: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+/* CCURRENCY DROPDOWN */
+
+.currency-dropbtn{
+    width: 150px;
+    /* border: 1px solid ; */
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.currency-dropbtn img{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+
+.currency-dropbtn:active{
+    scale: 0.94;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.currency-dropbtn span{
+    gap: 10px;
+    align-items: center;
+}
+
+.salary.dropbtn span{
+    gap: 10px;
+    align-items: center;
+}
+
+.salary .fa-angle-up.rotate{
+    rotate: 180deg;
+    transition: .3s;
+}
+
+.currency .fa-angle-up.rotate{
+    rotate: 90deg;
+    transition: .3s;
+}
+
+.currency .currency-dropdown-content img{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.currency-dropdown-content{
+    display: none;
+    opacity: 0;
+}
+
+
+.currency-dropdown-content.show{
+    transition: .7s ease-in-out .3s;
+    opacity: 1;
+    display: grid;
+    position: absolute;
+    background-color: #fdd3a9;
+    display: grid;
+    margin: -52px 0 0 176px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.currency-dropdown-content li{
+    padding: 6px 15px;
+    margin: 4px;
+    border-radius: 8px;
+}
+
+.currency-dropdown-content li:hover{
+    background-color: rgba(150, 150, 150, 0.397);
+}
+
+.currency-dropdown-content li span{
+    align-items: center;
+    gap: 5px;
+}
+
+#last-dropdown{
+    border: none;
+}
+
+#last-dropdown i{
+    margin-left: 30px;
+}
+
+.dropdown i{
+    margin-left: 15px;
+}
+@media(max-width: 1120px) {
+    .salary-dropdown{
+        height: 80px;
+        width: 100%;
+    }
+}

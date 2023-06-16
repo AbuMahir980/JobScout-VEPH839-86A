@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>Search Page no login</title>
+    <link rel="stylesheet" href="/css/search.css" />
+    <!-- <link rel="stylesheet" href="/notificationDrpdwn.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/dropdown.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-box">
+        <div class="container grid nav-box-display">
+          <nav class="flex">
+            <div class="menuToggle"></div>
+            <div class="logo">
+              <img
+                src="/images/Screenshot 2023-04-25 at 9.23.44 AM 1.png"
+                alt="logo"
+              />
+            </div>
+            <ul class="nav-con">
+              <li class="nav-item"><a href="../index.html">Home</a></li>
+              <li class="nav-item"><a href="../pages/aboutUs-index.html">About</a></li>
+              <li class="nav-item"><a href="../pages/services-index.html">Service</a></li>
+            </ul>
+            <ul class="auth-container">
+              <li class="auth-item login"><a href="../pages/signin.html">Login</a></li>
+              <li class="auth-item signup"><a href="../pages/signUp.html">Signup</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="grid">
+      <!-- SEARCH SECTION -->
+      <div class="container">
+        <section class="search-section container">
+          <div class="search-con grid">
+            <div class="search-title flex">
+              <div class="back-icon">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <h4>Search results</h4>
+            </div>
+            <form action="">
+              <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass icon search"></i>
+                <input
+                  type="text"
+                  placeholder="skills, keywords, companies..."
+                />
+              </div>
+
+              <div class="btn">Search</div>
+            </form>
+          </div>
+        </section>
+      </div>
+
+      <div class="container">
+        <div class="jobs-results">
+          <!-- RESULTS FILTER -->
+          <div class="filter">
+            <div class="filter-head">
+              <h3>FILTER</h3>
+            </div>
+
+            <!-- FILTER DROPDOWN MENU LISTS -->
+            <div class="filter-items">
+              <!-- FILTER DROPDOWN MENU ITEMS -->
+
+              <!-- START COMPLEX DROPDOWN -->
+
+              <div class="salary-dropdown">
+                <div class="salary dropbtn flex">
+                  <span class="salary-selected flex" style="color: #000"
+                    >Salary(Year)</span
+                  >
+
+                  <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="salary-dropdown-content">
+                  <div class="currency">
+                    <div class="currency-dropbtn flex">
+                      <span class="currency-selected flex"
+                        ><span class="flex" style="color: #000"
+                          ><img
+                            src="images/Usa.png"
+                            class="countryLogo"
+                            alt=""
+                          />
+                          DOLLAR</span
+                        ></span
+                      >
+                      <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                    <ul class="currency-dropdown-content">
+                      <li class="active">
+                        <span class="currency-info flex" style="color: #000"
+                          ><img
+                            src="images/Usa.png"
+                            class="currency-name"
+                            alt=""
+                          />
+                          DOLLAR</span
+                        >
+                      </li>
+                      <li class="">
+                        <span class="currency-info flex" style="color: #000"
+                          ><img
+                            src="images/Nigeria Circular.png"
+                            class="currency-name"
+                            alt=""
+                          />
+                          NAIRA</span
+                        >
+                      </li>
+                      <li class="">
+                        <span class="currency-info flex" style="color: #000"
+                          ><img
+                            src="images/uk.png"
+                            class="currency-name"
+                            alt=""
+                          />
+                          POUNDS</span
+                        >
+                      </li>
+                    </ul>
+                    <!-- <span>
+                            <select name="" id="">
+                                <option value="">1500</option>
+                                <option value="">2000</option>
+                                <option value="">2500</option>
+                                <option value="">3000</option>
+                                <option value="">3500</option>
+                                <option value="">4000</option>
+                                <option value="">4500</option>
+                                <option value="">5000</option>
+                                <option value="">5500</option> 
+                                <option value="">6000</option>
+                                
+                            </select>
+                            
+                        </span> -->
+                  </div>
+
+                  <div class="amount">
+                    <!-- SLIDER -->
+                    <ul class="price grid">
+                      <div class="price-range flex">
+                        <!-- <input type="number" class="min-price" value="2500">
+                                <input type="number" class="max-price" value="7500"> -->
+
+                        <div class="min-price flex">
+                          <span></span>
+                          <div class="c-number">2500</div>
+                        </div>
+                        <div class="seperator">-</div>
+                        <div class="max-price flex">
+                          <span></span>
+                          <div class="c-number">7500</div>
+                        </div>
+                      </div>
+                      <div class="slider">
+                        <div class="progress"></div>
+                      </div>
+                      <div class="range-input">
+                        <input
+                          type="range"
+                          class="range-min"
+                          min="0"
+                          max="10000"
+                          step="100"
+                          value="2500"
+                        />
+                        <input
+                          type="range"
+                          class="range-max"
+                          min="0"
+                          max="10000"
+                          step="100"
+                          value="7500"
+                        />
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- END COMPLEX DROPDOWN -->
+
+              <div class="dropdown">
+                <div class="dropbtn flex">
+                  <span class="selected">Employment Type</span>
+                  <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <ul class="dropdown-content">
+                  <li class="drp-item active">
+                    <span style="color: #000">Full Time</span>
+                  </li>
+                  <li class="drp-item">
+                    <span style="color: #000">Seasonal</span>
+                  </li>
+                  <li class="drp-item">
+                    <span style="color: #000">Self Employed</span>
+                  </li>
+                  <li class="drp-item">
+                    <span style="color: #000">Temporary</span>
+                  </li>
+                  <li class="drp-item">
+                    <span style="color: #000">Contract</span>
+                  </li>
+                  <li class="drp-item">
+                    <span style="color: #000">intern</span>
+                  </li>
+                  <li class="drp-item">
+                    <span style="color: #000">Reserve</span>
+                  </li>
+                  <li class="drp-item">
+                    <span style="color: #000">Freelance</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Experience starts Here -->
+              <div class="dropdown">
+                <div class="dropbtn flex">
+                  <span class="selected">Experience</span>
+                  <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <ul class="dropdown-content">
+                  <li class="drp-item active">
+                    <span style="color: #000">Entry Level/Graduate</span>
+                  </li>
+                  <li class="drp-item">
+                    <span style="color: #000">1-2 years</span>
+                  </li>
+                  <li class="drp-item">
+                    <span style="color: #000">3-5 years</span>
+                  </li>
+                  <li class="drp-item">
+                    <span style="color: #000">6-10 years</span>
+                  </li>
+                  <li class="drp-item">
+                    <span style="color: #000">10+ years</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- Experience ends Here -->
+
+              <!-- Location starts Here -->
+
+              <div id="last-dropdown" class="dropdown">
+                <div class="dropbtn flex">
+                  <span class="selected">Location</span>
+                  <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <ul class="dropdown-content">
+                  <li class="drp-item active">
+                    <span style="color: #000">Africa</span>
+                  </li>
+                  <li class="drp-item">
+                    <span style="color: #000">Asia</span>
+                  </li>
+                  <li class="drp-item">
+                    <span style="color: #000">Europe</span>
+                  </li>
+                  <li class="drp-item">
+                    <span style="color: #000">North America</span>
+                  </li>
+                  <li class="drp-item">
+                    <span style="color: #000">South America</span>
+                  </li>
+                  <li class="drp-item">
+                    <span style="color: #000">Australia</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- Location ends Here -->
+            </div>
+          </div>
+
+          <!-- SEARCH RESULTS -->
+          <div class="results grid">
+            <div class="results-top flex">
+              <div class="result-amount">
+                <h6>5000 Results</h6>
+              </div>
+              <div class="see-all">
+                <a href=""><h6>See All</h6></a>
+              </div>
+            </div>
+            <!-- RESULT ITEM GROUP -->
+            <div class="results-bottom grid">
+              <!-- RESULT ITEMS -->
+              <div class="result-item flex">
+                <div class="top flex">
+                  <div class="job-info flex">
+                    <div class="logo-display flex">
+                      <div class="job-logo">
+                        <img src="/images//Group 341.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="job-details">
+                      <div class="job-position"><h3>Web developer</h3></div>
+                      <div class="logo-name"><h6>Amazon</h6></div>
+                      <div class="job-location">
+                        <h6>Greater Accra Region, Ghana</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bookmark flex">
+                    <div class="job-type">Remote</div>
+                    <span><i class="fa-regular fa-bookmark"></i></span>
+                  </div>
+                </div>
+
+                <div class="bottom flex">
+                  <div class="salary">
+                    <span>$5,000 - $10,000/month</span>
+                  </div>
+
+                  <div class="apply flex">
+                    <div class="btn save">
+                      Save<span><img src="/images/Vector1.png" alt="" /></span>
+                    </div>
+                    <div onclick="window.open('/pages/signin.html', '_self') ;"class="btn">Apply</div>
+                  </div>
+                </div>
+              </div>
+              <div class="result-item flex">
+                <div class="top flex">
+                  <div class="job-info flex">
+                    <div class="logo-display flex">
+                      <div class="job-logo">
+                        <img src="/images//Group 341.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="job-details">
+                      <div class="job-position"><h3>Web developer</h3></div>
+                      <div class="logo-name"><h6>Amazon</h6></div>
+                      <div class="job-location">
+                        <h6>Greater Accra Region, Ghana</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bookmark flex">
+                    <div class="job-type">Remote</div>
+                    <span><i class="fa-regular fa-bookmark"></i></span>
+                  </div>
+                </div>
+
+                <div class="bottom flex">
+                  <div class="salary">
+                    <span>$5,000 - $10,000/month</span>
+                  </div>
+
+                  <div class="apply flex">
+                    <div class="btn save">
+                      Save<span><img src="/images/Vector1.png" alt="" /></span>
+                    </div>
+                    <div onclick="window.open('/pages/signin.html', '_self') ;" class="btn">Apply</div>
+                  </div>
+                </div>
+              </div>
+              <div class="result-item flex">
+                <div class="top flex">
+                  <div class="job-info flex">
+                    <div class="logo-display flex">
+                      <div class="job-logo">
+                        <img src="/images//Group 341.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="job-details">
+                      <div class="job-position"><h3>Web developer</h3></div>
+                      <div class="logo-name"><h6>Amazon</h6></div>
+                      <div class="job-location">
+                        <h6>Greater Accra Region, Ghana</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bookmark flex">
+                    <div class="job-type">Remote</div>
+                    <span><i class="fa-regular fa-bookmark"></i></span>
+                  </div>
+                </div>
+
+                <div class="bottom flex">
+                  <div class="salary">
+                    <span>$5,000 - $10,000/month</span>
+                  </div>
+
+                  <div class="apply flex">
+                    <div class="btn save">
+                      Save<span><img src="/images/Vector1.png" alt="" /></span>
+                    </div>
+                    <div onclick="window.open('/pages/signin.html', '_self') ;" class="btn">Apply</div>
+                  </div>
+                </div>
+              </div>
+              <div class="result-item flex">
+                <div class="top flex">
+                  <div class="job-info flex">
+                    <div class="logo-display flex">
+                      <div class="job-logo">
+                        <img src="/images//Group 341.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="job-details">
+                      <div class="job-position"><h3>Web developer</h3></div>
+                      <div class="logo-name"><h6>Amazon</h6></div>
+                      <div class="job-location">
+                        <h6>Greater Accra Region, Ghana</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bookmark flex">
+                    <div class="job-type">Remote</div>
+                    <span><i class="fa-regular fa-bookmark"></i></span>
+                  </div>
+                </div>
+
+                <div class="bottom flex">
+                  <div class="salary">
+                    <span>$5,000 - $10,000/month</span>
+                  </div>
+
+                  <div class="apply flex">
+                    <div class="btn save">
+                      Save<span><img src="/images/Vector1.png" alt="" /></span>
+                    </div>
+                    <div onclick="window.open('/pages/signin.html', '_self') ;" class="btn">Apply</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+     <!-- FOOTER -->
+
+     <footer class="grid">
+      <div class="container footer-con">
+        <div class="footer-logo grid">
+          <img
+            src="/images/Screenshot 2023-04-25 at 9.23.44 AM 2.png"
+            alt="logo-img"
+          />
+        </div>
+        <div class="footer-links">
+          <ul class="footer-about f-li grid">
+            <li class="footer-head">About</li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./aboutUs-index.html">About Us</a></li>
+            <li><a href="./contact-index.html">Contact</a></li>
+            <li><a href="./faq-index.html">FAQ</a></li>
+          </ul>
+          <ul class="footer-company f-li grid">
+            <li class="footer-head">Company</li>
+            <li><a>Our Team</a></li>
+            <li><a>Category</a></li>
+            <li><a>Terms & Conditions</a></li>
+            <li><a>Partner with us</a></li>
+          </ul>
+          <ul class="footer-followUs f-li grid">
+            <li class="footer-head">Follow Us</li>
+            <li><a href="https://www.facebook.com/"><img src="/images/facebook.png" alt="facebook">Facebook</a></li>
+            <li><a href="https://twitter.com/"><img src="/images/twitter.png" alt="twitter">Twitter</a></li>
+            <li><a href="https://www.instagram.com/"><img src="/images/instagram.png" alt="instagram">Instagram</a></li>
+            <!-- <li><a href="#"><img src="" alt=""></a></li> -->
+          </ul>
+        </div>
+        <div class="footer-joinUs grid">
+          <h3 class="footer-head">Join Us</h3>
+          <p>Subscribe to our news letter</p>
+          <form action="" class="grid">
+            <input type="email" name="" id="" placeholder="Email Address" />
+            <div class="btn grid">Subscribe</div>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; VEPH839/86A Project All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/dropdown.js"></script>
+  </body>
+</html>

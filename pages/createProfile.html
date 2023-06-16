@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Job Scout - The Number One Job Search Platform</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/createProfile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">    
+    
+</head>    
+<body>
+    <!--Container-->
+    <div class="container">
+        <!--Header section-->
+        <div class="header">
+            <a href="index.html">
+            <img src="../images/jobScoutLogo.png" alt="jobScoutLogo">
+        </a>
+        </div>
+        <!--Section housing the signIn contents-->
+        <div class="innerCont">
+            <div class="subInn">
+                <h4>Personal Information</h4>
+                <div class="topLayer">
+                    <h5>Filling in your personal information will help Company know more about you</h5>
+                    <form action="">
+                        <div class="forms">
+                            <div class="minForm">
+                                <div class="row1">
+                                    <div class="firstname">
+                                        <label for="firstname">First Name</label>
+                                        <br>
+                                        <input type="text" name="firstname" id="firstname" placeholder="Abayomi">
+                                    </div>
+                                    <div class="secondname">
+                                        <label for="firstname">Other Names</label>
+                                        <br>
+                                        <input type="text" name="firstname" id="firstname" placeholder="Ayobami Samuel">
+                                    </div>    
+                                </div>
+                                <div class="row2">
+                                    <div class="phone">
+                                        <label for="phone">Phone Number</label>
+                                        <br>
+                                        <input type="number" name="phone" id="phone" placeholder="081********">
+                                    </div>
+                                    <div class="gender">
+                                        <label for="gender">Gender</label>
+                                        <br>
+                                        <select class="box" name="gender" id="gender" required>
+                                            <option value="" disabled selected hidden id="lone">Select Gender</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                                    </div>    
+                                </div>
+                                <div class="row3">
+                                    <div class="DOB">
+                                        <label for="DOB">Date of Birth</label>
+                                        <br>
+                                        <p>We will Never Share this  Without Your Consent</p>
+                                        <br>
+                                        <input class="DOB" type="date" name="DOB" id="DOB">
+                                    </div>
+                                    <div class="Location">
+                                        <label for="Location">Location</label>
+                                        <br>
+                                        <p>where do you live *</p>
+                                        <br>
+                                        <!-- <input type="text" name="location" id="location"> -->
+                                        <select id="job-locations" class="box">
+                                            <option value="">Select a location</option>
+                                            <option value="Abuja">Abuja, Nigeria</option>
+                                            <option value="Lagos">Lagos, Nigeria</option>
+                                            <option value="Ibadan">Ibadan, Nigeria</option>
+                                            <option value="Abeokuta">Abeokuta, Nigeria</option>
+                                            <option value="PH">PH, Nigeria</option>
+                                        </select>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+                <button onclick="window.open('/pages/completeProfile1.html','_self');" type="submit" class="btn">Continue</button>
+            </div>
+
+        </div>
+        <!--Footer-->
+        <div class="footer">
+            <div class="list">
+                <div class="priv">
+                    <ul>
+                        <li><a href="./privacy-index.html">Privacy</a></li>
+                        <li><a href="./t&c.html">Terms & Conditions</a></li>
+                        <li><a href="./contact-index.html">Contact</a></li>
+                        <li><a href="./faq-index.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="copy">
+                    <p>Copyright &copy; VEPH839/86A Project</p>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

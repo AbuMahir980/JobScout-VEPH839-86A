@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/profile-edit.css" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+    <script src="https://kit.fontawesome.com/a558094b85.js" crossorigin="anonymous"></script>
+
+    <title>Profile Edit</title>
+  </head>
+  <body>
+    <header>
+        <div class="nav-box">
+            <div class="container grid nav-box-diaplay">
+                <nav class="flex">
+                    <div class="menuToggle"></div>
+                    <div class="logo">
+                        <img src="/images/Screenshot 2023-04-25 at 9.23.44 AM 1.png" alt="logo">
+                    </div>
+                    <ul class="nav-con">
+                        <li class="nav-item"><a href="./home.html"><span style="color: #fff;"><i class="fa fa-home" aria-hidden="true"></i></span> Home</a></li>
+                        <li class="nav-item"><a href="./search.html"><span style="color: #fff;"><i class="fa fa-search" aria-hidden="true"></i></span> Job search</a></li>
+                        <li class="nav-item"><a href=""><span style="color: #fff;"><i class="fa fa-bookmark-o" aria-hidden="true"></i></span> Saved Search</a></li>
+                        <li class="nav-item"><a href="./jobhistory.html"><span style="color: #fff;"><i class="fa fa-clock-o" aria-hidden="true"></i></span> History</a></li>
+                    </ul>
+                    <ul class="auth-container">
+                        <li class="auth-item login"><a href=""><i class="fa fa-inbox" aria-hidden="true"></i></a></li>
+                        <li class="auth-item login"><a href=""><i class="fa fa-bell-o" aria-hidden="true"></i></a></li>
+                        <li class="auth-item signup"><a href="./profile-edit.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="lg-container">
+      <div class="lg-small-container">
+        <div class="icon">
+          <div class="arrow-left">
+            <a href="/pages/home.html">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i> <span>Save & Back to Home</span>  </a>
+          </div>
+        </div>
+
+       <div class="sub-container">
+        <div class="personal-info">
+            <div class="personal-info-title">
+                <h3>Personal Information</h3>
+                <p id="myParagraph" class="name">Jay Martins</p>
+                <p id="myParagraph"><i class="fa fa-user" aria-hidden="true"></i>22 Years</p>
+                <p id="myParagraph"><i class="fa fa-map-marker" aria-hidden="true"></i>Port Harcourt</p>
+                <button onclick="openEditor()"><i class="fa fa-pencil-square-o" aria-hidden="true" ></i>Edit</a></button>
+            </div>
+            <div class="personal-info-img">
+                <img src="/images/user.png" alt="user-img">
+            </div>
+
+        <!-- <div class="openEdit">
+
+        </div> -->
+        </div>
+        <div class="personal-info">
+            <div class="personal-info-title">
+                <h3>Contact Information</h3>
+                <p id="myParagraphCon"><i class="fa fa-user" aria-hidden="true"></i>+23470333333333</p>
+                <p id="myParagraphCon"><i class="fa fa-map-marker" aria-hidden="true"></i>jayma09@outlook.com</p>
+                <button onclick="openEditorContact()"><i class="fa fa-pencil-square-o" aria-hidden="true" ></i>Edit</a></button>
+                <!-- <p><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true" ></i>Edit</a></p> -->
+            </div>
+            <!-- <div class="personal-info-img">
+                <img src="images/user.png" alt="user-img">
+            </div> -->
+        </div>
+        <div class="personal-info">
+            <div class="personal-info-title">
+                <h3>Desired Job</h3>
+                <p class="name" id="myParagraph">UI/UX Designer</p>
+                <p id="myParagraphDes"><i class="fa fa-map-marker" aria-hidden="true"></i>Full Time, Part Time, Intern, Contract</p>
+                <button onclick="openEditorDes()"><i class="fa fa-pencil-square-o" aria-hidden="true" ></i>Edit</a></button>
+            </div>
+            <!-- <div class="personal-info-img">
+                <img src="images/user.png" alt="user-img">
+            </div> -->
+        </div>
+        <div class="personal-info">
+            <div class="personal-info-title">
+                <h3>Education</h3>
+                <p class="name" id="myParagraph">University of Nigeria Nsukka</p>
+                <p id="myParagraphEdu"><i class="fa fa-user" aria-hidden="true"></i>Faculty of Information Technology</p>
+                <p id="myParagraphEdu"><i class="fa fa-map-marker" aria-hidden="true"></i>Nsukka, Enugu State</p>
+                <button onclick="openEditorEdu()"><i class="fa fa-pencil-square-o" aria-hidden="true" ></i>Edit</a></button>
+            </div>
+            <!-- <div class="personal-info-img">
+                <img src="images/user.png" alt="user-img">
+            </div> -->
+        </div>
+
+        <div class="personal-info">
+            <div class="personal-info-title">
+                <h3>Work Experience</h3>
+                <!-- <p class="name" id="myParagraph">Jay Martins</p>
+                <p id="myParagraph"><i class="fa fa-user" aria-hidden="true"></i>22 Years</p>
+                <p id="myParagraph"><i class="fa fa-map-marker" aria-hidden="true"></i>Port Harcourt</p> -->
+                <button  onclick="openEditor()"><i class="fa fa-pencil-square-o" aria-hidden="true" ></i>Edit</a></button>
+            </div>
+            <!-- <div class="personal-info-img">
+                <img src="images/user.png" alt="user-img">
+            </div> -->
+        </div>
+        <div class="personal-info">
+            <div class="personal-info-title">
+                <h3>Skills</h3>
+                <p class="name" id="myParagraph">NONE</p>
+                <!-- <p id="myParagraph"><i class="fa fa-user" aria-hidden="true"></i>22 Years</p>
+                <p id="myParagraph"><i class="fa fa-map-marker" aria-hidden="true"></i>Port Harcourt</p> -->
+                <button  onclick="openEditor()"><i class="fa fa-pencil-square-o" aria-hidden="true" ></i>Edit</a></button>
+            </div>
+            <!-- <div class="personal-info-img">
+                <img src="images/user.png" alt="user-img">
+            </div> -->
+        </div>
+       
+       </div> 
+        
+    </section>
+ <!-- FOOTER -->
+
+ <footer class="grid">
+  <div class="container footer-con">
+    <div class="footer-logo grid">
+      <img
+        src="/images/Screenshot 2023-04-25 at 9.23.44 AM 2.png"
+        alt="logo-img"
+      />
+    </div>
+    <div class="footer-links">
+      <ul class="footer-about f-li grid">
+        <li class="footer-head">About</li>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./aboutUs-index.html">About Us</a></li>
+        <li><a href="./contact-index.html">Contact</a></li>
+        <li><a href="./faq-index.html">FAQ</a></li>
+      </ul>
+      <ul class="footer-company f-li grid">
+        <li class="footer-head">Company</li>
+        <li><a>Our Team</a></li>
+        <li><a>Category</a></li>
+        <li><a>Terms & Conditions</a></li>
+        <li><a>Partner with us</a></li>
+        
+      </ul>
+      <ul class="footer-followUs f-li grid">
+        <li class="footer-head">Follow Us</li>
+        <li><a href="https://www.facebook.com/"><img src="/images/facebook.png" alt="facebook">Facebook</a></li>
+        <li><a href="https://twitter.com/"><img src="/images/twitter.png" alt="twitter">Twitter</a></li>
+        <li><a href="https://www.instagram.com/"><img src="/images/instagram.png" alt="instagram">Instagram</a></li>
+        <!-- <li><a href="#"><img src="" alt=""></a></li> -->
+      </ul>
+    </div>
+    <div class="footer-joinUs grid">
+      <h3 class="footer-head">Join Us</h3>
+      <p>Subscribe to our news letter</p>
+      <form action="" class="grid">
+        <input type="email" name="" id="" placeholder="Email Address" />
+        <div class="btn grid">Subscribe</div>
+      </form>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>&copy; VEPH839/86A Project All rights reserved.</p>
+  </div>
+</footer>
+
+    <script>
+
+// Personal information start.......
+function openEditor() {
+
+  var paragraph = document.getElementById("myParagraph");
+  var currentValue = paragraph.textContent;
+
+  // Create an input element
+  var input = document.createElement("input");
+  input.type = "text";
+  input.value = currentValue;
+
+  // Replace the paragraph with the input element
+  paragraph.parentNode.replaceChild(input, paragraph);
+
+  // Focus the input element
+  input.focus();
+
+  // Add event listener for Enter key press
+  input.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      saveValue(input.value);
+    }
+  });
+}
+// Personal information ends.......
+
+
+// Contact information.....
+
+
+function openEditorContact(){
+
+var paragraphCon = document.getElementById("myParagraphCon");
+var currentValue = paragraphCon.textContent;
+
+// Create an input element
+var input = document.createElement("input");
+input.type = "text";
+input.value = currentValue;
+
+// Replace the paragraph with the input element
+paragraphCon.parentNode.replaceChild(input, paragraphCon);
+
+// Focus the input element
+input.focus();
+
+// Add event listener for Enter key press
+input.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    saveValue(input.value);
+  }
+});
+}
+
+// Contact information ends.......
+
+// Desired job information start.......
+
+function openEditorDes(){
+
+var paragraphDes = document.getElementById("myParagraphDes");
+var currentValue = paragraphDes.textContent;
+
+// Create an input element
+var input = document.createElement("input");
+input.type = "text";
+input.value = currentValue;
+
+// Replace the paragraph with the input element
+paragraphDes.parentNode.replaceChild(input, paragraphDes);
+
+// Focus the input element
+input.focus();
+
+// Add event listener for Enter key press
+input.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    saveValue(input.value);
+  }
+});
+}
+
+// Desired job information ends.......
+
+
+// Education information starts.......
+function openEditorEdu(){
+
+var paragraphEdu = document.getElementById("myParagraphEdu");
+var currentValue = paragraphEdu.textContent;
+
+// Create an input element
+var input = document.createElement("input");
+input.type = "text";
+input.value = currentValue;
+
+// Replace the paragraph with the input element
+paragraphEdu.parentNode.replaceChild(input, paragraphEdu);
+
+// Focus the input element
+input.focus();
+
+// Add event listener for Enter key press
+input.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    saveValue(input.value);
+  }
+});
+}
+
+// Education information ends.......
+
+function saveValue(value) {
+  var input = document.querySelector("input");
+
+  // Create a new paragraph element
+  var newParagraph = document.createElement("p");
+  newParagraph.textContent = value;
+
+  // Replace the input with the new paragraph
+  input.parentNode.replaceChild(newParagraph, input);
+}
+
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up to Job Scout | Job Scout - The Number One Job Search Platform</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/signUp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">    
+    <script src="../js/signUp.js" type="text/javascript"></script>
+</head>    
+<body>
+    <!--Container-->
+    <div class="container">
+        <!--Header section-->
+        <div class="header">
+            <img src="/images/jobScoutLogo.png" alt="jobScoutLogo">
+        </div>
+        <!--Section housing the signUp contents-->
+        <div class="innerCont">
+            <div class="miniInnCont">
+                <h1>Sign Up</h1>
+            </div>
+            <!--Create an account with us Container-->    
+            <div class="account">
+                <h3>Create An Account With Us Today</h3>
+            </div>
+            <!--Forms Container-->
+            <div class="forms">
+                <div class="formsLevel1">
+                    <div class="miniforms">
+                        <form action="" target="_self" method="post" autocomplete="on">
+                            <!--email address-->
+                            <label class="mail label" for="email">Email address</label>
+                            <br>
+                            <input class="mail input" type="email" name="email" id="email" placeholder="samuel1@gmail.com" required>
+                            <br>
+                            <br>
+                            <!--Password-->
+                            <label class="pass label" for="password">Password</label>
+                            <br>
+                            <input class="pass input" type="password" name="password" id="mypassword" placeholder="************" required>
+                            <span class="eye" onclick="togglePasswordVisibility()">
+                            <i id="hide1" class="fa fa-eye"></i>
+                            <i id="hide2" class="fa fa-eye-slash"></i>
+                            </span>
+                            <br>
+                            <br>
+                            <!--Confirm password-->
+                            <label class="pass label" for="password">Confirm Password</label>
+                            <br>
+                            <input class="pass input" type="password" name="password" id="my_password" placeholder="************" required>
+                            <span class="eyes" onclick="togglePasswordVisibility1()">
+                            <i id="hide3" class="fa fa-eye"></i>
+                            <i id="hide4" class="fa fa-eye-slash"></i>
+                            </span>
+                            <br>
+                            <br>
+                            <button onclick="window.open('/pages/createProfile.html', '_self') ;" type="submit" class="btn input">Sign Up</button>
+                        </form>
+                    </div>
+                    <!--Line & OR statement-->
+                    <div class="extras">
+                        <hr class="line one">
+                        <p id="txt">OR</p>
+                        <hr class="line two">
+                    </div>
+                    <!--Container hosting Social media Sign in-->
+                    <div class="socials">
+                        <!--Google sign-in-->
+                        <button class="social">Continue with Google</button>
+                        <div id="img">
+                                <img class="image" src="../images/Google logo.png" alt="Google Logo">
+                        </div>
+                        <!--Facebook Sign-in-->
+                        <button class="social">Continue with Facebook</button>
+                        <div id="img1">
+                            <img class="image" src="../images/Facebook logo.png" alt="Facebook Logo">
+                        </div>
+                        <!--Apple Sign-in-->
+                        <button class="social">Continue with Apple</button>
+                        <div id="img2">
+                            <img class="image" src="../images/Apple logo.png" alt="Apple Logo"> 
+                        </div>
+                    </div>
+                </div>
+                <!--Privacy & Account creation section-->
+                <div class="txtContainer">
+                    <p>By signing Up, you agree with our <a class="state" href="./privacy-index.html">Privacy Statement</a> and <a class="state" href="./t&c.html">Terms & Conditions</a></p>
+                    <p>Already have an account? <a class="state" href="../pages/signin.html">Sign In</a></p>
+                </div>    
+                    
+            </div>
+
+        </div>
+        <!--Footer-->
+        <div class="footer">
+            <div class="list">
+                <div class="priv">
+                    <ul>
+                        <li><a href="./privacy-index.html">Privacy</a></li>
+                        <li><a href="./t&c.html">Terms & Conditions</a></li>
+                        <li><a href="./contact-index.html">Contact</a></li>
+                        <li><a href="./faq-index.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="copy">
+                    <p>Copyright &copy; VEPH839/86A Project</p>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessment Page</title>
+    <link rel="stylesheet" href="/css/assessment.css" />
+    <link rel="stylesheet" href="/css/notificationDrpdwn.css" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav-box">
+        <div class="container grid nav-box-display">
+          <nav class="flex">
+            <div class="menuToggle"></div>
+            <a href="../index.html" class="logo">
+              <img
+                src="/images/Screenshot 2023-04-25 at 9.23.44 AM 1.png"
+                alt="logo"
+              />
+            </a>
+            <ul class="nav-con">
+              <li class="nav-item">
+                <a href="/pages/home.html"
+                  ><span style="color: #fff"
+                    ><i class="fa-solid fa-house"></i
+                  ></span>
+                  Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="/pages/search.html"
+                  ><span style="color: #fff"
+                    ><i class="fa-solid fa-magnifying-glass icon search"></i
+                  ></span>
+                  Job search</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href=""
+                  ><span style="color: #fff"
+                    ><i class="fa-regular fa-bookmark"></i
+                  ></span>
+                  Saved Search</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="/pages/jobhistory.html"
+                  ><span style="color: #fff"
+                    ><i class="fa-regular fa-clock"></i
+                  ></span>
+                  History</a
+                >
+              </li>
+            </ul>
+            <ul class="auth-container">
+              <input type="checkbox" id="collapsible-head" />
+              <label for="collapsible-head"
+                ><li class="auth-item login">
+                  <i class="fa-regular fa-bell"></i></li
+              ></label>
+              <section class="notification-section">
+                <div class="notification-container">
+                  <div class="notification-top not-pad grid">
+                    <div class="notification-close flex">
+                      <div class="">
+                        <h2>Noticication</h2>
+                      </div>
+                      <label class="close" for="collapsible-head">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                      </label>
+                    </div>
+
+                    <div class="notification-groups-heads flex">
+                      <div class="notification-group-head active-not-head flex">
+                        <h4>News</h4>
+                        <div class="notification-count">2</div>
+                      </div>
+                      <div class="notification-group-head flex">
+                        <h4>News</h4>
+                        <div class="notification-count">2</div>
+                      </div>
+                      <div class="notification-group-head flex">
+                        <h4>News</h4>
+                        <div class="notification-count">2</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="notification-bottom">
+                    <div class="notification-groups-items">
+                      <div class="notification-item not-pad flex">
+                        <div class="notification-logo">
+                          <img src="images/Group 34.png" alt="" />
+                        </div>
+                        <div class="flex">
+                          <div class="notification-details">
+                            <h3>Capstone plc</h3>
+                            <p>You received a job offer from capstone plc</p>
+                          </div>
+                          <div class="notification-time">
+                            <p>3 min ago</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="notification-item not-pad flex">
+                        <div class="notification-logo">
+                          <img src="images/Group 34.png" alt="" />
+                        </div>
+                        <div class="flex">
+                          <div class="notification-details">
+                            <h3>Capstone plc</h3>
+                            <p>You received a job offer from capstone plc</p>
+                          </div>
+                          <div class="notification-time">
+                            <p>3 min ago</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="notification-item not-pad flex">
+                        <div class="notification-logo">
+                          <img src="images/Group 34.png" alt="" />
+                        </div>
+                        <div class="flex">
+                          <div class="notification-details">
+                            <h3>Capstone plc</h3>
+                            <p>You received a job offer from capstone plc</p>
+                          </div>
+                          <div class="notification-time">
+                            <p>3 min ago</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="notification-item not-pad flex">
+                        <div class="notification-logo">
+                          <img src="images/Group 34.png" alt="" />
+                        </div>
+                        <div class="flex">
+                          <div class="notification-details">
+                            <h3>Capstone plc</h3>
+                            <p>You received a job offer from capstone plc</p>
+                          </div>
+                          <div class="notification-time">
+                            <p>3 min ago</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <li class="auth-item signup">
+                <a href="/pages/profile-edit.html"
+                  ><i class="fa-regular fa-user"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="cover">
+      <main class="grid">
+        <div class="header-top">
+          <div class="header-title">
+            <h1>Welcome to the assessment!</h1>
+            <p>
+              We're here to help you find better job opportunities that align
+              with your skills, preferences, and career goals. Please take a few
+              moments to answer the following questions. Your responses will
+              assist us in understanding your unique needs and finding the most
+              suitable job matches for you.
+            </p>
+          </div>
+        </div>
+        <div class="sub-section">
+            <form action="">
+                <div class="form-group">
+                    <label for="job Preferences">1. Job Preferences:</label>
+                    <li>Enter your desired job title or position.</li>
+                    <input type="text" class="form-control" id="" placeholder="Eg UI/UX Designer">
+                    <li>Choose the industry or field you are most interested in.</li>
+                    <select class="custom-select" style="width:465px"; id="industry" >
+                        <option value="" disabled selected hidden id="lone">Select</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Creative Arts">Creative Arts</option>
+                        <option value="Education">Education</option>
+                        <option value="Environmental Sustainability">Environmental Sustainability</option>
+                        <option value="Business and Entrepreneurship">Business and Entrepreneurship</option>
+                        <option value="Social Impact">Social Impact</option>
+                        <option value="Engineering and Manufacturing">Engineering and Manufacturing</option>
+                        <option value="Media and Entertainment">Media and Entertainment</option>
+                      </select>
+                    <li>Indicate your level of experience in your desired field.</li>
+                    <select  class="custom-select" style="width:465px"; id="experience">
+                        <option value="" disabled selected hidden id="lone">Select</option>
+                        <option value="Entry-level">Entry-level</option>
+                        <option value="Junior-level">Junior-level</option>
+                        <option value="Mid-level">Mid-level</option>
+                        <option value="Senior-level">Senior-level</option>
+                        <option value="Expatriate">Expatriate</option>
+                      </select>
+
+                      <!-- *******Skills and Qualifications******* -->
+                    <br>
+                    <label for="skilssQual">2. Skills and Qualifications:</label>
+                    <li>Enter your key skills or qualifications that make you a strong candidate.</li>
+                    <input type="text" class="form-control" id="" placeholder="Eg Teamwork, Creativity e.t.c.">
+                    <li>Select the areas where you excel</li>
+                    <select  class="custom-select" style="width:465px"; id="areaExcel">
+                        <option value="" disabled selected hidden id="lone">Select</option>
+                        <option value="Leadership">Leadership</option>
+                        <option value="Problem-solving">Problem-solving</option>
+                        <option value="Communication">Communication</option>
+                        <option value="Adaptability">Adaptability</option>
+                        <option value="Teamwork">Teamwork</option>
+                        <option value="Innovation">Innovation</option>
+                        <option value="Time-Management">Time-Management</option>
+                        <option value="Attention to Detail">Attention to Detail</option>
+                        <option value="Analytical Skills">Analytical Skills</option>
+                        <option value="customer Service">customer Service</option>
+                      </select>
+
+                      <!-- ******Location and Work Arrangements***** -->
+                      <br>
+                      <label for="locationWork">3. Location and Work Arrangements:</label>
+                      <li>Choose your desired work arrangement</li>
+                    <select  class="custom-select" style="width:465px"; id="location">
+                        <option value="" disabled selected hidden id="lone">Select</option>
+                        <option value="Full-Time">Full-Time</option>
+                        <option value="Part-Time">Part-Time</option>
+                        <option value="Temporary">Temporary</option>
+                        <option value="Contract">Contract</option>
+                        <option value="Intern">Intern</option>
+                        <option value="Seasonal">Seasonal</option>
+                        <option value="Freelance">Freelance</option>
+                      </select>
+
+
+                          <!-- ******Salary Expectations***** -->
+                          <br>
+                          <label for="salary expectation">4. Salary Expectations:</label>
+                          <li>Define your desired salary range for your next job. (This will help us find opportunities that align with your financial goals.)</li>
+                          <input type="text" class="form-control" id="" placeholder="E.g $80,000 - $100,000 Annually">
+
+                            <!-- ******Additional Factors***** -->
+                            <br>
+                            <label for="additional factors">5. Additional Factors:</label>
+                            <li>Identify any additional factors or specific requirements important to you in your job search.</li>
+                            <input type="text" class="form-control" id="" placeholder="E.g work-life balance, company benefits. e.t.c.">
+                            <!-- ******Submit Button***** -->
+                            <br>
+                            <a href="#side-drawer" class="btn btn-primary" >Submit</a>
+                </div>
+            </form>
+        </div>
+        <!-- <a href="" class="open-pop"></a> -->
+
+      </main>
+      <aside id="side-drawer">
+        <div class="side-details">
+          <img src="/images/user.png" alt="user-img">
+          <h3>Thank you for taking the assessment</h3>
+          <a href="/pages/home.html">Click to your Home page</a>
+
+
+        </div>
+
+      </aside>
+      <!-- FOOTER -->
+
+    <footer class="grid">
+      <div class="container footer-con">
+        <div class="footer-logo grid">
+          <img
+            src="/images/Screenshot 2023-04-25 at 9.23.44 AM 2.png"
+            alt="logo-img"
+          />
+        </div>
+        <div class="footer-links">
+          <ul class="footer-about f-li grid">
+            <li class="footer-head">About</li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./aboutUs-index.html">About Us</a></li>
+            <li><a href="./contact-index.html">Contact</a></li>
+            <li><a href="./faq-index.html">FAQ</a></li>
+          </ul>
+          <ul class="footer-company f-li grid">
+            <li class="footer-head"><a href="">Company</a></li>
+            <li><a>Our Team</a></li>
+            <li><a>Category</a></li>
+            <li><a href="./t&c.html">Terms & Conditions</a></li>
+            <li><a>Partner with us</a></li>
+            
+          </ul>
+          <ul class="footer-followUs f-li grid">
+            <li class="footer-head">Follow Us</li>
+            <li><a href="https://www.facebook.com/"><img src="/images/facebook.png" alt="facebook">Facebook</a></li>
+            <li><a href="https://twitter.com/"><img src="/images/twitter.png" alt="twitter">Twitter</a></li>
+            <li><a href="https://www.instagram.com/"><img src="/images/instagram.png" alt="instagram">Instagram</a></li>
+            <!-- <li><a href="#"><img src="" alt=""></a></li> -->
+          </ul>
+        </div>
+        <div class="footer-joinUs grid">
+          <h3 class="footer-head">Join Us</h3>
+          <p>Subscribe to our news letter</p>
+          <form action="" class="grid">
+            <input type="email" name="" id="" placeholder="Email Address" />
+            <div class="btn grid">Subscribe</div>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; VEPH839/86A Project All rights reserved.</p>
+      </div>
+    </footer>
+
+    </section>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

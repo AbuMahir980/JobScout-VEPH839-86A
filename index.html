@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+    <title>Job Scout</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-box">
+        <div class="container">
+          <nav class="flex">
+            <div class="menuToggle"></div>
+            <div class="logo">
+              <a href="index.html"
+                ><img
+                  src="/images/Screenshot 2023-04-25 at 9.23.44 AM 1.png"
+                  alt="logo"
+              /></a>
+            </div>
+            <ul class="nav-con">
+              <li class="nav-item"><a href="index.html">Home</a></li>
+              <li class="nav-item"><a href="/pages/aboutUs-index.html">About</a></li>
+              <li class="nav-item"><a href="pages/services-index.html">Service</a></li>
+            </ul>
+            <ul class="auth-container">
+              <li class="auth-item login"><a href="pages/signin.html">Login</a></li>
+              <li class="auth-item signup"><a href="pages/signUp.html">Sign Up</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="container">
+        <div class="hero">
+          <div class="hero-text">
+            <h1><span>Explore </span>the Latest Job <br>Openings</h1>
+            <p>
+              Start Your Job Search Journey with Us Today with our user-friendly
+              platform
+            </p>
+          </div>
+          <div class="hero-image">
+            <img
+              src="/images/Group 31.png"
+              alt="job hunt image"
+              class="hero-image-item"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- SEARCH SECTION -->
+    <section class="search-section">
+      <div class="container">
+        <div class="search-con grid">
+          <div class="search-heading">
+            <h2><span>Search </span>Thousands of Jobs Here</h2>
+          </div>
+          <form action="">
+            <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass icon search"></i>
+              <input
+                type="text"
+                id="search-bar"
+                placeholder="skills, keywords, companies..."
+                autocomplete="off"
+              />
+              <ul id="autocomplete-results"></ul>
+            </div>
+
+            <div class="search-box">
+              <i class="fa-solid fa-location-dot icon location"></i>
+              <input
+                type="text"
+                id="myInput"
+                placeholder="Enter Location"
+                name="location"
+                autocomplete="off"
+              />
+              <div id="autocomplete-resultsLocation"></div>
+            </div>
+            <div onclick="window.open('/pages/noUsersearch.html', '_self') ;"class="btn" id="searchButton">Search</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+
+    <section class="description">
+      <div class="container">
+        <div class="description-con grid">
+          <!-- STEPS -->
+          <div class="steps grid">
+            <h2>How it works</h2>
+            <div class="step-items flex flex-wrap">
+              <div class="step-item">
+                <div class="step-icon">
+                  <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="step-name">Create Account</div>
+              </div>
+              <div class="step-item">
+                <div class="step-icon">
+                  <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="step-name">Take an assessment</div>
+              </div>
+              <div class="step-item">
+                <div class="step-icon">
+                  <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="step-name">Submit CV</div>
+              </div>
+              <div class="step-item">
+                <div class="step-icon">
+                  <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="step-name">Quick Job</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- INFO -->
+
+          <div class="infomate">
+            <div class="upload">
+              <div class="upload-details grid">
+                <div class="upload-item head">
+                  <h2>
+                    Get Your Dream Job, <br />Just by <span>Uploading</span>
+                    <br />Your CV
+                  </h2>
+                </div>
+                <div class="upload-item body">
+                  <p>
+                    Uploading your CV is a quick and easy process, and it allows
+                    you to apply for job openings on our platform with just a
+                    few clicks.
+                  </p>
+                </div>
+                <div class="upload-btn">
+                  <span><i class="fa-solid fa-cloud-arrow-up"></i></span>
+                  <a href="pages/signUp.html">Upload CV </a>
+                </div>
+              </div>
+              <div class="upload-image">
+                <img src="/images/Group 32.png" alt="" />
+              </div>
+            </div>
+
+            <div class="upload">
+              <div class="upload-image img2">
+                <img src="/images/Group 33.png" alt="" />
+              </div>
+              <div class="upload-details-2 grid">
+                <div class="upload-item head">
+                  <h2><span>About</span> Us</h2>
+                </div>
+                <div class="upload-item body">
+                  <p>
+                    Job Scout is focused on helping job seekers find their dream
+                    jobs by providing a user-friendly and efficient platform.
+                    The team is passionate about creating a community of job
+                    seekers and recruiters who are committed to helping each
+                    other succeed. The platform is dedicated to connecting
+                    talented individuals with top companies and employers across
+                    various industries and locations.
+                  </p>
+                </div>
+                <div class="aboutUs-btn">
+                  <a href="./pages/aboutUs-index.html">
+                    Read All About Us
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="grid">
+      <div class="container footer-con">
+        <div class="footer-logo grid">
+          <img
+            src="/images/Screenshot 2023-04-25 at 9.23.44 AM 2.png"
+            alt="logo-img"
+          />
+        </div>
+        <div class="footer-links">
+          <ul class="footer-about f-li grid">
+            <li class="footer-head">About</li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/aboutUs-index.html">About Us</a></li>
+            <li><a href="./pages/contact-index.html">Contact</a></li>
+            <li><a href="./pages/faq-index.html">FAQ</a></li>
+          </ul>
+          <ul id="footer-company" class="footer-company f-li grid">
+            <li class="footer-head">Company</li>
+            <li><a>Our Team</a></li>
+            <li><a>Category</a></li>
+            <li><a>Terms & Conditions</a></li>
+            <li><a>Partner with us</a></li>
+            
+          </ul>
+          <ul id="footer-followUs"class="footer-followUs f-li grid">
+            <li class="footer-head">Follow Us</li>
+            <li><a href="https://www.facebook.com/"> <img src="/images/facebook.png" alt="facebook"> Facebook</a></li>
+            <li><a href="https://twitter.com/"><img src="/images/twitter.png" alt="twitter">Twitter</a></li>
+            <li><a href="https://www.instagram.com/"><img src="/images/instagram.png" alt="instagram">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="footer-joinUs grid">
+          <h3 class="footer-head">Join Us</h3>
+          <p>Subscribe to our news letter</p>
+          <form action="" class="grid">
+            <input type="email" name="" id="" placeholder="Email Address" />
+            <div class="btn grid">Subscribe</div>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; VEPH839/86A Project All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <!-- <script src="js/autocomplete.js"></script> -->
+  </body>
+</html>

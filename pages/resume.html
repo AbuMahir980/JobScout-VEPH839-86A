@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/resume.css" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="/css/assessment.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Resume page</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-box">
+        <div class="container grid nav-box-diaplay">
+          <nav class="flex">
+            <div class="menuToggle"></div>
+            <div class="logo">
+              <img
+                src="/images/Screenshot 2023-04-25 at 9.23.44 AM 1.png"
+                alt="logo"
+              />
+            </div>
+            <ul class="nav-con">
+              <li class="nav-item">
+                <a href="./home.html"
+                  ><span style="color: #fff"
+                    ><i class="fa fa-home" aria-hidden="true"></i
+                  ></span>
+                  Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="./search.html"
+                  ><span style="color: #fff"
+                    ><i class="fa fa-search" aria-hidden="true"></i
+                  ></span>
+                  Job search</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href=""
+                  ><span style="color: #fff"
+                    ><i class="fa fa-bookmark-o" aria-hidden="true"></i
+                  ></span>
+                  Saved Search</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="./jobhistory.html"
+                  ><span style="color: #fff"
+                    ><i class="fa fa-clock-o" aria-hidden="true"></i
+                  ></span>
+                  History</a
+                >
+              </li>
+            </ul>
+            <ul class="auth-container">
+              <li class="auth-item login">
+                <a href=""><i class="fa fa-inbox" aria-hidden="true"></i></a>
+              </li>
+              <li class="auth-item login">
+                <a href=""><i class="fa fa-bell-o" aria-hidden="true"></i></a>
+              </li>
+              <li class="auth-item signup">
+                <a href=""
+                  ><i class="fa fa-user-circle" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="lg-container">
+      <div class="lg-small-container">
+        <div class="header-part">
+          <h2>Submit A Proposal</h2>
+        </div>
+        <div class="form-part">
+          <form id="form">
+            <div class="top-form">
+              <p><label for=""> Your Preferred salary</label></p>
+              <br />
+              <input
+                type="text"
+                placeholder="$ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.00/month"
+              /><br />
+            </div>
+            <div class="second-form">
+              <p class="text-area">
+                <label for="">Write A Cover Letter</label>
+              </p>
+              <br />
+              <textarea
+                name="write"
+                id="cover-letter"
+                placeholder="Write"
+                cols="50"
+                rows="10"
+              ></textarea
+              ><br />
+            </div>
+            <div class="last-form">
+              <p class="text-area"><label for="">Attach file/links</label></p>
+              <br />
+              <!-- <i class="fa fa-paperclip" aria-hidden="true"></i> -->
+              <input type="file" name="upload" id="upload-btn" />
+            </div>
+            <div class="submit-btn">
+              <!-- <a href="#" class="button" onclick="openPopup()">Submit</a> -->
+              <a href="#side-drawer" class="btn btn-primary" >Submit</a>
+            </div>
+      
+          </form>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- /* POP UP CONTAINER  */ -->
+    <aside id="side-drawer">
+      <div class="side-details">
+        <div class="first-pop-up">
+          <div class="img-pop">
+            <img src="/images/Happy Cloud.png" alt="" />
+          </div>
+          <div class="text-pop">
+            <p class="header-text">Congratulations!</p>
+            <p>
+              Your application have been submitted successfully. <br />you will
+              be notified on your progress.
+            </p>
+            <br>
+            <a href="/pages/home.html">Go To Home</a> <br><br>
+            <a href="/pages/home.html" class="cancel">Cancel</a>
+          </div>
+        </div>
+
+      </div>
+
+    </aside>
+
+    <!-- FOOTER -->
+
+    <footer class="grid">
+      <div class="container footer-con">
+        <div class="footer-logo grid">
+          <img
+            src="/images/Screenshot 2023-04-25 at 9.23.44 AM 2.png"
+            alt="logo-img"
+          />
+        </div>
+        <div class="footer-links">
+          <ul class="footer-about f-li grid">
+            <li class="footer-head">About</li>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./aboutUs-index.html">About Us</a></li>
+            <li><a href="./contact-index.html">Contact</a></li>
+            <li><a href="./faq-index.html">FAQ</a></li>
+          </ul>
+          <ul class="footer-company f-li grid">
+            <li class="footer-head">Company</li>
+            <li><a>Our Team</a></li>
+            <li><a>Category</a></li>
+            <li><a>Terms & Conditions</a></li>
+            <li><a>Partner with us</a></li>
+            
+          </ul>
+          <ul class="footer-followUs f-li grid">
+            <li class="footer-head"><a href="">Follow Us</a></li>
+            <li><a href="https://www.facebook.com/"><img src="/images/facebook.png" alt="facebook">Facebook </a></li>
+            <li><a href="https://twitter.com/"><img src="/images/twitter.png" alt="twitter">Twitter</a></li>
+            <li><a href="https://www.instagram.com/"><img src="/images/instagram.png" alt="instagram">Instagram</a></li>
+            <!-- <li><a href="#"><img src="" alt=""></a></li> -->
+          </ul>
+        </div>
+        <div class="footer-joinUs grid">
+          <h3 class="footer-head">Join Us</h3>
+          <p>Subscribe to our news letter</p>
+          <form action="" class="grid">
+            <input type="email" name="" id="" placeholder="Email Address" />
+            <div class="btn grid">Subscribe</div>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; VEPH839/86A Project All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const goodNetwork = document.getElementById("good-network");
+
+      function openPopup() {
+        goodNetwork.classList.remove("second-pop-up-container");
+        goodNetwork.classList.add("open-popup");
+        // const lgContainer = document.querySelector('.lg-container');
+        // lgContainer.style.background-color = "#fffff";
+        
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,387 @@
+html {
+    box-sizing: border-box;
+    overflow-x:hidden ;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 1600px;
+    background: linear-gradient(180deg, #BEDEDF 0%, #C2DFE0 70.76%, #FFFFFF 132.84%);
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    color: #F9F8F8;
+}
+
+/*header container*/
+.container .header {
+    background-color: #0E8388;
+    width: 1350px;
+    height: 110px;
+}
+
+/*logo styling*/
+.header a img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 15px;
+    left: 120px;
+}
+
+/*inner container*/
+.container .innerCont {
+    position: absolute;
+    width: 820px;
+    height: 1200px;
+    left: 290px;
+    top: 220px;
+    background: #5EACB0;
+    border-radius: 10px;
+}
+/*div Back styling*/
+.container .innerCont .back {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    width: 75px;
+    height: 30px;
+    left: 40px;
+    top: 62px;
+}
+
+.back a {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+    font-weight: 700;
+    font-size: 19.2px;
+    line-height: 23px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/*subInn container*/
+.container .innerCont .subInn {
+    position: absolute;
+    width: 820px;
+    height: 1000px;
+    left: 0px;
+    top: 80px;
+}
+.container .innerCont .subInn .icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    position: absolute;
+    width: 505px;
+    height: 331.58px;
+    left: 160px;
+    top: 0px;
+    text-align: center;
+}
+.container .innerCont .subInn .icon h2{
+    width: 505px;
+    height: 47px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 47px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.subInn .forms {
+    position: absolute;
+    width: 590px;
+    height: 403px;
+    left: 152px;
+    top: 86px;
+}
+.forms h5{
+    position: absolute;
+    width: 200px;
+    height: 27px;
+    left: 0px;
+    top: 0px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23.04px;
+    line-height: 27px;
+    color: inherit;
+}
+.forms .formLev{
+    position: absolute;
+    width: 590px;
+    height: 360px;
+    left: 0px;
+    top: 51px;
+}
+.subInn .forms .formLev .desiredJob .employmentType .jobLocation .expSalary{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    position: absolute;
+    width: 590px;
+    height: 76px;
+    left: 0px;
+    top: 0px;
+    
+}
+.employmentType{
+    top: 92px;
+    margin-top: 15px;
+    
+}
+.jobLocation{
+    top: 184px;
+    margin-top: 15px;
+}
+.expSalary{
+    top: 276px;
+    margin-top: 15px;
+}
+.subInn .forms label{
+    width: 200px;
+    height: 19px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #F9F8F8;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.subInn .forms input, select{
+    width: 500px;
+    height: 56px;
+    background: #F9F8F8;
+    border: 1px solid #C0C0C0;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: dimgrey;
+}
+input::placeholder {
+    width: 121px;
+    height: 19px;
+    padding: 10px;
+    font-family: 'Robot', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 19px;
+    color: #C0C0C0;
+}
+select.box {
+    color: gray;
+    font-family: inherit;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+select:focus {
+    outline: none;
+}
+
+
+
+/*hr styling */
+hr.line {
+    position: absolute;
+    width: 820px;
+    height: 0px;
+    left: 0px;
+    top: 520px;
+}
+
+.subInn .secLayer{
+    position: absolute;
+    width: 500px;
+    height: 450px;
+    left: 152.5px;
+    top: 550px;
+}
+
+.subInn .secLayer .btn .butn{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 209px;
+    gap: 10px;
+    position: absolute;
+    width: 500px;
+    /* height: 60px; */
+    left: 0px;
+    top: 380px;
+    background: #09575B;
+    border-radius: 5px;
+    font-size: 22px;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: bolder;
+    color: inherit;
+    border: 0;
+}
+.butn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.subInn .secLayer .upload{
+    position: absolute;
+    width: 500px;
+    height: 375px;
+    left: 0px;
+    top: 0px;
+}
+.upload h4{
+    position: absolute;
+    width: 243px;
+    height: 32px;
+    left: 0px;
+    top: 0px;    
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+.upload .mini{
+    position: absolute;
+        width: 500px;
+        height: 330px;
+        left: 0px;
+        top: 45px;
+}
+.upload .mini .link .notify .file .checkbox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    position: absolute;
+    width: 500px;
+    height: 79px;
+    left: 0px;
+    top: 0px;
+}
+.notify{
+    top:200px;
+    margin-top: 20px;
+}
+.file{
+    top:30px;
+    margin-top: 20px;
+    width: 200px;
+    padding: 10px;
+}
+.file label{
+    margin-bottom: 10px;
+}
+.checkbox{
+    top: 500px;
+    margin-top: 40px;
+}
+.mini label{
+    width: 500px;
+    height: 19px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #F9F8F8;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.link input, .notify select{
+    width: 500px;
+    height: 56px;
+    background: #F9F8F8;
+    border: 1px solid #C0C0C0;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+select.box {
+    color: gray;
+    font-family: inherit;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+select:focus {
+    outline: none;
+}
+
+/* footer section styling */
+.container .footer {
+    position: relative;
+    width: 1350px;
+    height: 80px;
+    left: 0px;
+    top: 1420px;
+    background-color: #0E8388;
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    color: #F9F8F8;
+}
+
+.container .footer .list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 550px;
+    position: absolute;
+    width: 1200px;
+    left: 120px;
+    top: 39px;
+}
+
+.container .footer .list ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+/* footer anchor element styling */
+.container .footer .list a {
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}

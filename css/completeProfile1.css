@@ -1,0 +1,381 @@
+html {
+    box-sizing: border-box;
+    overflow-x:hidden ;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 1600px;
+    background: linear-gradient(180deg, #BEDEDF 0%, #C2DFE0 70.76%, #FFFFFF 132.84%);
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    color: #F9F8F8;
+}
+
+/*header container*/
+.container .header {
+    background-color: #0E8388;
+    width: 1350px;
+    height: 110px;
+}
+
+/*logo styling*/
+.header a img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 15px;
+    left: 120px;
+}
+
+/*inner container*/
+.container .innerCont {
+    position: absolute;
+    width: 820px;
+    height: 1200px;
+    left: 290px;
+    top: 220px;
+    background: #5EACB0;
+    border-radius: 10px;
+}
+/*div Back styling*/
+.container .innerCont .back {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    width: 75px;
+    height: 30px;
+    left: 40px;
+    top: 62px;
+}
+
+.back a {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+    font-weight: 700;
+    font-size: 19.2px;
+    line-height: 23px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/*subInn container*/
+.container .innerCont .subInn {
+    position: absolute;
+    width: 820px;
+    height: 1000px;
+    left: 0px;
+    top: 100px;
+}
+.container .innerCont .subInn .icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    position: absolute;
+    width: 505px;
+    height: 331.58px;
+    left: 160px;
+    top: 0px;
+    text-align: center;
+}
+.container .innerCont .subInn .icon h2{
+    width: 505px;
+    height: 47px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 47px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.container .innerCont .subInn .icon h4{
+    width: 305px;
+    height: 40px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: inherit;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.icon .component{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    width: 500px;
+    height: 300px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin-top: -40px;
+    justify-content: center;
+}
+
+.icon .component #employed{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 200px;
+    height: auto;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    /* margin-top: -30px; */
+}
+.icon .component #unemployed{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 200px;
+    height: auto;
+    /* margin-top: -30px; */
+    
+}
+
+.image-container.clicked {
+    border: 1px solid #403f3f;
+    border-radius: 5px;
+    background-color: #0e8488d4;
+    box-shadow: #403f3f;
+    transition: .3s ease-in-out;
+
+   
+  }
+
+
+  
+  #autocomplete-results {
+    position: absolute;
+    /* top: 100%; */
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    margin-left: 65px;
+    background-color: #ffffff;
+    z-index: 1;
+    color: #5c5c5c;
+    border-radius: 8px;
+    max-height: 150px;
+    max-width: 230px;
+    overflow-y: scroll;
+    /* border: 1px solid #ccc; */
+    border: none;
+  }
+  
+  #autocomplete-results li {
+    list-style: none;
+    padding: 15px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  #autocomplete-results li:hover {
+    background-color: #5eacb05d;
+  }
+/*hr styling */
+hr.line{
+    position: absolute;
+        width: 820px;
+        height: 0px;
+        left: 0px;
+        top: 400px;
+}
+/*class forms styling*/
+.subInn .forms{
+    position: absolute;
+    width: 590px;
+    height: 364px;
+    left: 110px;
+    top: 420px;
+}
+.subInn .forms .recentJob, .recentCompany, .jobLocation, .employmentType{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    width: 550px;
+    height: 79px;
+    left: 45px;
+    top: 0px;
+}
+.recentCompany{
+    top: 95px;
+}
+.jobLocation{
+    top: 190px;
+}
+.employmentType{
+    top: 285px;
+}
+.subInn .forms label{
+    width: 200px;
+    height: 19px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #F9F8F8;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-top: 20px;
+    margin-bottom: -15px;
+}
+/*Input styling*/
+.subInn .forms input, select{
+    width: 500px;
+    height: 56px;
+    background: #F9F8F8;
+    border: 1px solid #C0C0C0;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 10px;
+    color: dimgrey;
+}
+
+input::placeholder {
+    width: 121px;
+    height: 19px;
+    padding: 10px;
+    font-family: 'Robot', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C0C0C0;
+}
+select.box {
+    color: gray;
+    font-family: inherit;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+select:focus {
+    outline: none;
+}
+
+/*class button styling*/
+.subInn .btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 550px;
+    height: 140px;
+    left: 130px;
+    top: 817.63px;
+    margin-top: 10px;
+}
+.btn a{
+    text-decoration: none;
+    width: 273px;
+    height: 32px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27.65px;
+    line-height: 32px;
+    color: #FFC589;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.btn .butn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 209px;
+    gap: 10px;
+    width: 500px;
+    height: 56px;
+    background: #09575B;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-size: 22px;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: bolder;
+    color: inherit;
+    border: 0;
+    
+}
+.butn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+
+/* footer section styling */
+.container .footer {
+    position: relative;
+    width: 1350px;
+    height: 80px;
+    left: 0px;
+    top: 1420px;
+    background-color: #0E8388;
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    color: #F9F8F8;
+}
+
+.container .footer .list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 550px;
+    position: absolute;
+    width: 1200px;
+    left: 120px;
+    top: 39px;
+}
+
+.container .footer .list ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+/* footer anchor element styling */
+.container .footer .list a {
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}

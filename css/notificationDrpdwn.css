@@ -1,0 +1,131 @@
+.not-pad{
+    padding: 6px 20px;
+
+}
+
+.notification-section{
+    /* right: 40%; */
+    position: absolute;
+    opacity: 0;
+    transition: .3s;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+/* @media(max-width: 1900px){
+    .notification-section{
+        position: absolute;
+        opacity: 0;
+        transition: .3s;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+    }
+
+    .auth-container input:checked ~ .notification-section{
+        margin-left: -20%;
+        position: absolute;
+        height: 500px;
+        width: 443px;
+        opacity: 1;
+        overflow: hidden;
+    }
+} */
+
+
+.notification-container{
+    width: 420px;
+    background-color: #BDDDDE;
+    border-radius: 5px;
+    padding: 10px 0;
+    box-shadow: 8px 2px 15px #1E1E1E56;
+    
+}
+
+.auth-container input{
+    visibility: hidden;
+}
+
+/* WHEN INPUT FIELD IS CHECKED */
+
+.auth-container input:checked ~ .notification-section{
+    /* left: 40%; */
+    margin-left: -20%;
+    position: absolute;
+    height: 500px;
+    width: 443px;
+    opacity: 1;
+    overflow: hidden;
+}
+
+
+.notification-top{
+    margin-bottom: 10px;
+    gap: 20px;
+    height: fit-content;
+    border-bottom: solid 1px #6B6B6B;
+}
+
+.notification-top .notification-close{
+    color: #09575B;
+    justify-content: space-between;
+}
+
+.notification-top .notification-close .close{
+    cursor: pointer;
+    font-size: larger;
+    padding: 3px 7px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.notification-top .notification-close .close:hover{
+    scale: 1.07;
+    background-color: #86868646;
+}
+
+
+.notification-groups-heads{
+    gap: 10px;
+}
+
+
+.notification-groups-heads .notification-group-head{
+    color: #868686;
+    padding: 5px 10px;
+}
+
+/*  ACTIVE NOTIFICATION HEAD */
+.notification-groups-heads .notification-group-head.active-not-head{
+    border-bottom: solid 2px #09575B;
+}
+
+.notification-groups-heads .notification-group-head .notification-count{
+    background-color: var(--highlight-color);
+    color: #fff ;
+    padding: 0 8px;
+    border-radius: 50%;
+}
+
+.notification-bottom{
+    color: #042a2c;
+}
+
+.notification-bottom .notification-groups-items .notification-item{
+    width: 100%;
+    font-size: small;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    border-bottom: solid 1px #6B6B6B;
+}
+
+.notification-bottom .notification-groups-items .notification-item:hover{
+    background-color: #86868662;
+}
+
+.notification-bottom .notification-groups-items .notification-item .notification-logo img{
+    width: 50px;
+    font-size: small;
+}
